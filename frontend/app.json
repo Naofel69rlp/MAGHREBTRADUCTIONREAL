@@ -1,0 +1,71 @@
+{
+  "expo": {
+    "name": "MaghrebTraduction",
+    "slug": "frontend",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "frontend",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.emergent.darijachat.mhdwef",
+      "usesAppleSignIn": true,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Dicter vos phrases à traduire par la voix",
+        "NSCameraUsageDescription": "Photographier du texte à traduire",
+        "NSPhotoLibraryUsageDescription": "Choisir une image de texte à traduire"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.maghrebtraduction.app",
+      "versionCode": 105,
+      "permissions": ["RECORD_AUDIO", "CAMERA"]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Dicter vos phrases à traduire par la voix"
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-image.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#000000"
+        }
+      ],
+      "expo-apple-authentication",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Photographier du texte à traduire"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Choisir une image de texte à traduire"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

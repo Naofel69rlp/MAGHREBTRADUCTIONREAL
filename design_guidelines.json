@@ -1,0 +1,140 @@
+{
+  "app_name": "MaghrebTalk",
+  "personality": "6 Glass / Luxe (Adapted for LIGHT mode)",
+  "personality_one_liner": "A premium, spacious, and elegant translation tool blending modern Luxe aesthetics with warm Maghrebi cultural undertones.",
+  "color": {
+    "surface": "#FDFBF7",
+    "onSurface": "#2C2B29",
+    "surfaceSecondary": "#F4EFE6",
+    "onSurfaceSecondary": "#4A4845",
+    "surfaceTertiary": "#EAE4D8",
+    "onSurfaceTertiary": "#6B6864",
+    "surfaceInverse": "#1A4D2E",
+    "onSurfaceInverse": "#FDFBF7",
+    "brand": "#1A4D2E",
+    "brandPrimary": "#1A4D2E",
+    "onBrandPrimary": "#FDFBF7",
+    "brandSecondary": "#D4AF37",
+    "onBrandSecondary": "#2C2B29",
+    "brandTertiary": "#E8F0EA",
+    "onBrandTertiary": "#1A4D2E",
+    "success": "#2D6A4F",
+    "onSuccess": "#FFFFFF",
+    "warning": "#D4AF37",
+    "onWarning": "#2C2B29",
+    "error": "#9B2C2C",
+    "onError": "#FFFFFF",
+    "info": "#4A4845",
+    "onInfo": "#FFFFFF",
+    "border": "#EAE4D8",
+    "borderStrong": "#D4AF37",
+    "divider": "#EAE4D8"
+  },
+  "typography": {
+    "displayFontFamily": "Playfair Display",
+    "textFontFamily": "Plus Jakarta Sans",
+    "scale": {
+      "sm": 12,
+      "base": 14,
+      "lg": 16,
+      "xl": 20,
+      "2xl": 24
+    }
+  },
+  "spacing": {
+    "rule": "Generous spacing to reflect premium feel. Never cramp elements.",
+    "xs": 4,
+    "sm": 8,
+    "md": 12,
+    "lg": 16,
+    "xl": 24,
+    "2xl": 32,
+    "3xl": 48
+  },
+  "radius_tokens": {
+    "sm": 6,
+    "md": 12,
+    "lg": 20,
+    "pill": 999
+  },
+  "shadow_tier": "0",
+  "navigation": "bottom_tabs",
+  "icon_set": "Feather",
+  "glassmorphism": {
+    "enabled": "true",
+    "do's": [
+      "Language selector bar sticky at top",
+      "Bottom tab bar",
+      "Featured/Hero elements on Premium paywall screen"
+    ],
+    "dont's": [
+      "Do not use on regular input fields or result cards",
+      "Avoid on body text"
+    ]
+  },
+  "platform_libraries": {
+    "glass": {
+      "ios": "expo-glass-effect",
+      "android": "expo-blur",
+      "low_end_android_fallback": "solid surfaceSecondary"
+    },
+    "image": "expo-image",
+    "blur": "expo-blur",
+    "bottom_sheet": "@gorhom/bottom-sheet",
+    "animation": "react-native-reanimated",
+    "gesture": "react-native-gesture-handler"
+  },
+  "screens": [
+    {
+      "name": "Translate (Accueil)",
+      "purpose": "The core translation hub allowing text and voice input with side-by-side language swapping.",
+      "states": {
+        "loading": "Skeleton loaders matching the shape of the result card.",
+        "empty": "A spacious, welcoming empty state showing a soft illustration or simply the blank input field ready for text.",
+        "error": "Soft red warning toast indicating translation failure."
+      },
+      "layout": "1. Header: 'MaghrebTalk' in Playfair Display (brandPrimary) + soft gold chip showing '3/3 gratuites'. 2. Sticky Glassmorphism Language Selector: 'Français' on left, swap arrow in center, 'Marocain' on right. 3. Input Card: Large surfaceSecondary card with no borders, lots of padding (xl). A floating microphone FAB (brandTertiary with brandPrimary icon) tucked in the bottom right corner of the card. 4. Primary CTA: 'Traduire' button spanning full width minus padding. 5. Result Card: Same width, surfaceSecondary, displaying translation + phonetic + action row (Volume, Copy, Star). Background: An absolute positioned repeating geometric SVG pattern (or image) at 3-5% opacity."
+    },
+    {
+      "name": "History & Favorites",
+      "purpose": "Easily access past translations and saved favorite expressions.",
+      "states": {
+        "loading": "List skeletons.",
+        "empty": "Elegant empty state icon (Feather bookmark/clock) with Playfair Display heading 'Aucun favori pour le moment'.",
+        "error": "Error message with retry button."
+      },
+      "layout": "Standard vertical list. Each row is a surfaceSecondary card (radius md) showing source language on top (small text) and Maghrebi translation below (large text, Playfair Display), with a star icon aligned to the right. Use subtle divider lines between items."
+    },
+    {
+      "name": "Premium Paywall",
+      "purpose": "Convert free users to the unlimited plan by highlighting exclusive features in a luxurious dark-mode environment.",
+      "states": {
+        "loading": "Spinner.",
+        "empty": "N/A",
+        "error": "Payment failed state."
+      },
+      "layout": "Dark theme override for this screen only. Background uses the dark green/gold abstract image with a heavy linear-gradient scrim (top to bottom). Large golden typography. A feature list with gold checkmarks. A large 'S\\'abonner - Illimité' CTA (brandSecondary). A subtle 'Continuer avec Google' secondary button."
+    }
+  ],
+  "images": {
+    "background_pattern": {
+      "url": "https://images.unsplash.com/photo-1714636608872-048fc9231892?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzR8MHwxfHNlYXJjaHwxfHxzdWJ0bGUlMjBnZW9tZXRyaWMlMjBwYXR0ZXJuJTIwd2hpdGUlMjBiZWlnZSUyMHRleHR1cmV8ZW58MHx8fHwxNzg2ODE5NDgzfDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Subtle light beige texture to be used at very low opacity (5%) for geometric background feel"
+    },
+    "premium_hero": {
+      "url": "https://images.unsplash.com/photo-1678851168042-cc40b9f93a8f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwxfHxwcmVtaXVtJTIwZWxlZ2FudCUyMGRhcmslMjBncmVlbiUyMGFuZCUyMGdvbGQlMjBhYnN0cmFjdCUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzg2ODE5NDgzfDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Dark green and gold elegant abstract background for the premium screen"
+    }
+  },
+  "instructions_to_main_agent": [
+    "CRITICAL: The background MUST be a warm cream/beige (#FDFBF7), NEVER pure white (#FFFFFF).",
+    "NO TOLERANCE: Absolutely no blue or indigo colors anywhere in the app. Use the defined palette.",
+    "BACKGROUND TEXTURE: Apply the 'background_pattern' image or a CSS/SVG geometric pattern absolutely positioned at the root of the app with opacity between 3% and 5% to give it a subtle Maghrebi texture without visual clutter.",
+    "TYPOGRAPHY: Ensure 'Playfair Display' (serif) is used for headings and the logo, and 'Plus Jakarta Sans' (sans-serif) for all body text, UI elements, and buttons. Do NOT use Inter or Roboto.",
+    "PREMIUM SCREEN: The Premium Paywall screen should feel extremely luxurious. Use the 'premium_hero' image as a background with a strong gradient scrim (transparent to #1A4D2E) overlaid, so the gold/white text pops perfectly.",
+    "LANGUAGE SELECTOR: Use a glassmorphism (expo-blur) container for the sticky language selector at the top. Ensure it stays anchored during scroll.",
+    "FLAGS: Do NOT use emojis for flags. Instead, use clean text abbreviations (FR, MA, DZ, TN) inside a rounded brandTertiary chip, which looks much more premium.",
+    "HAPTICS: Add subtle haptic feedback when swapping languages, tapping the microphone, and favoriting a translation.",
+    "Ensure safe area is respected, especially for the absolute positioned background texture so it doesn't bleed weirdly over safe area edges."
+  ]
+}
