@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {
   ActivityIndicator,
+  Image,
   Platform,
   Pressable,
   StyleSheet,
@@ -51,7 +52,11 @@ export default function Login() {
       <View style={[styles.content, { paddingTop: insets.top + spacing.xxxl, paddingBottom: insets.bottom + spacing.xl }]}>
         <View style={styles.top}>
           <View style={styles.logoBadge}>
-            <Feather name="globe" size={30} color={colors.gold} />
+            <Image
+              source={require("@/assets/images/app-logo.png")}
+              style={styles.logoImage}
+              resizeMode="contain"
+            />
           </View>
           <Text
             style={styles.title}
@@ -128,6 +133,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     marginBottom: spacing.lg,
+    overflow: "hidden",
+  },
+  logoImage: {
+    width: 76,
+    height: 76,
   },
   title: {
     fontFamily: fonts.display,
