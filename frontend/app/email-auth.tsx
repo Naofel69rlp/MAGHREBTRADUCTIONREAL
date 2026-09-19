@@ -165,6 +165,15 @@ export default function EmailAuth() {
                 : "Pas encore de compte ? S'inscrire"}
             </Text>
           </Pressable>
+
+          {!isRegister && (
+            <Pressable
+              style={styles.forgotButton}
+              onPress={() => router.push("/forgot-password")}
+            >
+              <Text style={styles.forgotText}>Mot de passe oublié ?</Text>
+            </Pressable>
+          )}
         </ScrollView>
       </KeyboardAvoidingView>
     </LinearGradient>
@@ -257,5 +266,14 @@ const styles = StyleSheet.create({
     fontFamily: fonts.medium,
     fontSize: 14,
     color: colors.gold,
+  },
+  forgotButton: {
+    marginTop: spacing.sm,
+    alignItems: "center",
+  },
+  forgotText: {
+    fontFamily: fonts.regular,
+    fontSize: 13,
+    color: "rgba(253,251,247,0.6)",
   },
 });
