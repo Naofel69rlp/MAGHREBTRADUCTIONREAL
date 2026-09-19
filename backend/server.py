@@ -101,6 +101,16 @@ class ResendCodeRequest(BaseModel):
     email: str
 
 
+class ForgotPasswordRequest(BaseModel):
+    email: str
+
+
+class ResetPasswordRequest(BaseModel):
+    email: str
+    code: str
+    new_password: str
+
+
 class AppleAuthRequest(BaseModel):
     identity_token: str
     name: Optional[str] = None
@@ -193,6 +203,35 @@ async def _send_verification_email(email: str, code: str) -> None:
             logger.warning("Échec envoi email de vérification à %s: %s", email, resp.text)
     except Exception as e:  # noqa: BLE001
         logger.warning("Erreur envoi email de vérification: %s", e)
+
+
+async def _send_password_reset_email(email: str, code: str) -> None:
+    if not RESEND_API_KEY:
+        logger.warning("RESEND_API_KEY non configurée — email de réinitialisation non envoyé (code: %s)", code)
+        return
+    try:
+        async with httpx.AsyncClient(timeout=15) as hc:
+            resp = await hc.post(
+                "https://api.resend.com/emails",
+                headers={"Authorization": f"Bearer {RESEND_API_KEY}"},
+                json={
+                    "from": f"MaghrebTraduction <{EMAIL_FROM}>",
+                    "to": [email],
+                    "subject": "Réinitialise ton mot de passe",
+                    "html": (
+                        f"<div style='font-family:sans-serif;padding:24px'>"
+                        f"<h2>Réinitialisation du mot de passe</h2>"
+                        f"<p>Voici ton code de réinitialisation :</p>"
+                        f"<p style='font-size:32px;font-weight:bold;letter-spacing:6px'>{code}</p>"
+                        f"<p>Ce code expire dans 15 minutes. Si tu n'es pas à l'origine de cette demande, ignore cet email.</p>"
+                        f"</div>"
+                    ),
+                },
+            )
+        if resp.status_code >= 400:
+            logger.warning("Échec envoi email de réinitialisation à %s: %s", email, resp.text)
+    except Exception as e:  # noqa: BLE001
+        logger.warning("Erreur envoi email de réinitialisation: %s", e)
 
 
 def _serialize_user(doc: dict) -> dict:
@@ -373,6 +412,48 @@ async def resend_verification(payload: ResendCodeRequest):
         }},
     )
     await _send_verification_email(email, verification_code)
+    return {"ok": True}
+
+
+@api_router.post("/auth/forgot-password")
+async def forgot_password(payload: ForgotPasswordRequest):
+    email = payload.email.strip().lower()
+    user = await db.users.find_one({"email": email})
+    # On répond toujours "ok" même si le compte n'existe pas, pour ne pas
+    # révéler quels emails sont enregistrés.
+    if user and user.get("password_hash"):
+        reset_code = f"{random.randint(0, 999999):06d}"
+        await db.users.update_one(
+            {"email": email},
+            {"$set": {
+                "reset_code": reset_code,
+                "reset_code_expires": _now() + timedelta(minutes=15),
+            }},
+        )
+        await _send_password_reset_email(email, reset_code)
+    return {"ok": True}
+
+
+@api_router.post("/auth/reset-password")
+async def reset_password(payload: ResetPasswordRequest):
+    email = payload.email.strip().lower()
+    if len(payload.new_password) < 6:
+        raise HTTPException(status_code=400, detail="Le mot de passe doit contenir au moins 6 caractères")
+
+    user = await db.users.find_one({"email": email})
+    if not user or not user.get("password_hash"):
+        raise HTTPException(status_code=404, detail="Compte introuvable")
+
+    if _is_expired(user.get("reset_code_expires")):
+        raise HTTPException(status_code=400, detail="Code expiré, demande-en un nouveau")
+    if user.get("reset_code") != payload.code.strip():
+        raise HTTPException(status_code=400, detail="Code incorrect")
+
+    new_hash = bcrypt.hashpw(payload.new_password.encode("utf-8"), bcrypt.gensalt()).decode("utf-8")
+    await db.users.update_one(
+        {"email": email},
+        {"$set": {"password_hash": new_hash}, "$unset": {"reset_code": "", "reset_code_expires": ""}},
+    )
     return {"ok": True}
 
 
