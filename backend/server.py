@@ -147,6 +147,14 @@ def _now() -> datetime:
     return datetime.now(timezone.utc)
 
 
+def _is_expired(dt) -> bool:
+    if not dt:
+        return True
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    return dt < _now()
+
+
 PREMIUM_EMAILS = {
     e.strip().lower()
     for e in os.environ.get("PREMIUM_EMAILS", "nao.ruijaa@gmail.com").split(",")
@@ -335,7 +343,7 @@ async def verify_email(payload: VerifyEmailRequest):
         return {"ok": True, "already_verified": True}
 
     expires = user.get("verification_code_expires")
-    if not expires or expires < _now():
+    if _is_expired(expires):
         raise HTTPException(status_code=400, detail="Code expiré, demande-en un nouveau")
     if user.get("verification_code") != payload.code.strip():
         raise HTTPException(status_code=400, detail="Code incorrect")
