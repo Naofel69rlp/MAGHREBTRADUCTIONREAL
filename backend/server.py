@@ -1,6 +1,7 @@
 import os
 import json
 import uuid
+import random
 import hashlib
 import logging
 import tempfile
@@ -36,6 +37,8 @@ db = client[os.environ['DB_NAME']]
 OPENAI_API_KEY = os.environ['OPENAI_API_KEY']
 ANTHROPIC_API_KEY = os.environ.get('ANTHROPIC_API_KEY', '')
 GOOGLE_CLIENT_IDS = [c.strip() for c in os.environ.get("GOOGLE_CLIENT_IDS", "").split(",") if c.strip()]
+RESEND_API_KEY = os.environ.get("RESEND_API_KEY", "")
+EMAIL_FROM = os.environ.get("EMAIL_FROM", "onboarding@resend.dev")
 
 openai_client = AsyncOpenAI(api_key=OPENAI_API_KEY)
 anthropic_client = anthropic.AsyncAnthropic(api_key=ANTHROPIC_API_KEY) if ANTHROPIC_API_KEY else None
@@ -87,6 +90,15 @@ class RegisterRequest(BaseModel):
 class LoginRequest(BaseModel):
     email: str
     password: str
+
+
+class VerifyEmailRequest(BaseModel):
+    email: str
+    code: str
+
+
+class ResendCodeRequest(BaseModel):
+    email: str
 
 
 class AppleAuthRequest(BaseModel):
@@ -146,6 +158,35 @@ def _is_premium(user: dict) -> bool:
     return bool(user.get("is_premium")) or (user.get("email", "").lower() in PREMIUM_EMAILS)
 
 
+async def _send_verification_email(email: str, code: str) -> None:
+    if not RESEND_API_KEY:
+        logger.warning("RESEND_API_KEY non configurée — email de vérification non envoyé (code: %s)", code)
+        return
+    try:
+        async with httpx.AsyncClient(timeout=15) as hc:
+            resp = await hc.post(
+                "https://api.resend.com/emails",
+                headers={"Authorization": f"Bearer {RESEND_API_KEY}"},
+                json={
+                    "from": f"MaghrebTraduction <{EMAIL_FROM}>",
+                    "to": [email],
+                    "subject": "Vérifie ton adresse email",
+                    "html": (
+                        f"<div style='font-family:sans-serif;padding:24px'>"
+                        f"<h2>Bienvenue sur MaghrebTraduction 👋</h2>"
+                        f"<p>Voici ton code de vérification :</p>"
+                        f"<p style='font-size:32px;font-weight:bold;letter-spacing:6px'>{code}</p>"
+                        f"<p>Ce code expire dans 15 minutes.</p>"
+                        f"</div>"
+                    ),
+                },
+            )
+        if resp.status_code >= 400:
+            logger.warning("Échec envoi email de vérification à %s: %s", email, resp.text)
+    except Exception as e:  # noqa: BLE001
+        logger.warning("Erreur envoi email de vérification: %s", e)
+
+
 def _serialize_user(doc: dict) -> dict:
     return {
         "id": doc["user_id"],
@@ -155,6 +196,7 @@ def _serialize_user(doc: dict) -> dict:
         "phone": doc.get("phone", ""),
         "picture": doc.get("picture", ""),
         "is_premium": _is_premium(doc),
+        "email_verified": doc.get("email_verified", True),
     }
 
 
@@ -252,6 +294,7 @@ async def register(payload: RegisterRequest):
     password_hash = bcrypt.hashpw(payload.password.encode("utf-8"), bcrypt.gensalt()).decode("utf-8")
     user_id = f"user_{uuid.uuid4().hex[:12]}"
     full_name = f"{payload.first_name.strip()} {payload.last_name.strip()}".strip()
+    verification_code = f"{random.randint(0, 999999):06d}"
     await db.users.insert_one({
         "user_id": user_id,
         "email": email,
@@ -263,8 +306,12 @@ async def register(payload: RegisterRequest):
         "password_hash": password_hash,
         "picture": "",
         "is_premium": False,
+        "email_verified": False,
+        "verification_code": verification_code,
+        "verification_code_expires": _now() + timedelta(minutes=15),
         "created_at": _now(),
     })
+    await _send_verification_email(email, verification_code)
 
     session_token = f"local_{uuid.uuid4().hex}"
     await db.user_sessions.insert_one({
@@ -276,6 +323,49 @@ async def register(payload: RegisterRequest):
 
     user = await db.users.find_one({"user_id": user_id}, {"_id": 0})
     return {"session_token": session_token, "user": _serialize_user(user)}
+
+
+@api_router.post("/auth/verify-email")
+async def verify_email(payload: VerifyEmailRequest):
+    email = payload.email.strip().lower()
+    user = await db.users.find_one({"email": email})
+    if not user:
+        raise HTTPException(status_code=404, detail="Compte introuvable")
+    if user.get("email_verified"):
+        return {"ok": True, "already_verified": True}
+
+    expires = user.get("verification_code_expires")
+    if not expires or expires < _now():
+        raise HTTPException(status_code=400, detail="Code expiré, demande-en un nouveau")
+    if user.get("verification_code") != payload.code.strip():
+        raise HTTPException(status_code=400, detail="Code incorrect")
+
+    await db.users.update_one(
+        {"email": email},
+        {"$set": {"email_verified": True}, "$unset": {"verification_code": "", "verification_code_expires": ""}},
+    )
+    return {"ok": True}
+
+
+@api_router.post("/auth/resend-verification")
+async def resend_verification(payload: ResendCodeRequest):
+    email = payload.email.strip().lower()
+    user = await db.users.find_one({"email": email})
+    if not user:
+        raise HTTPException(status_code=404, detail="Compte introuvable")
+    if user.get("email_verified"):
+        return {"ok": True, "already_verified": True}
+
+    verification_code = f"{random.randint(0, 999999):06d}"
+    await db.users.update_one(
+        {"email": email},
+        {"$set": {
+            "verification_code": verification_code,
+            "verification_code_expires": _now() + timedelta(minutes=15),
+        }},
+    )
+    await _send_verification_email(email, verification_code)
+    return {"ok": True}
 
 
 @api_router.post("/auth/login")

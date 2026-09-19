@@ -28,6 +28,7 @@ export interface AppUser {
   phone?: string;
   picture: string;
   is_premium: boolean;
+  email_verified?: boolean;
 }
 
 export interface RegisterPayload {
@@ -158,7 +159,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       const data = await api.post("/auth/register", payload);
       await setToken(data.session_token);
       setUser(data.user);
-      router.replace("/(tabs)");
+      if (data.user?.email_verified === false) {
+        router.replace({ pathname: "/verify-email", params: { email: payload.email } });
+      } else {
+        router.replace("/(tabs)");
+      }
     } finally {
       setSigningIn(false);
     }
@@ -170,7 +175,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       const data = await api.post("/auth/login", { email, password });
       await setToken(data.session_token);
       setUser(data.user);
-      router.replace("/(tabs)");
+      if (data.user?.email_verified === false) {
+        router.replace({ pathname: "/verify-email", params: { email } });
+      } else {
+        router.replace("/(tabs)");
+      }
     } finally {
       setSigningIn(false);
     }
