@@ -24,8 +24,19 @@ export interface AppUser {
   id: string;
   email: string;
   name: string;
+  username?: string;
+  phone?: string;
   picture: string;
   is_premium: boolean;
+}
+
+export interface RegisterPayload {
+  username: string;
+  first_name: string;
+  last_name: string;
+  email: string;
+  password: string;
+  phone?: string;
 }
 
 interface AuthContextValue {
@@ -34,6 +45,8 @@ interface AuthContextValue {
   signingIn: boolean;
   signIn: () => Promise<void>;
   signInWithApple: () => Promise<void>;
+  registerWithEmail: (payload: RegisterPayload) => Promise<void>;
+  loginWithEmail: (email: string, password: string) => Promise<void>;
   signOut: () => Promise<void>;
   refreshUser: () => Promise<void>;
 }
@@ -139,6 +152,30 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     }
   }, []);
 
+  const registerWithEmail = useCallback(async (payload: RegisterPayload) => {
+    setSigningIn(true);
+    try {
+      const data = await api.post("/auth/register", payload);
+      await setToken(data.session_token);
+      setUser(data.user);
+      router.replace("/(tabs)");
+    } finally {
+      setSigningIn(false);
+    }
+  }, []);
+
+  const loginWithEmail = useCallback(async (email: string, password: string) => {
+    setSigningIn(true);
+    try {
+      const data = await api.post("/auth/login", { email, password });
+      await setToken(data.session_token);
+      setUser(data.user);
+      router.replace("/(tabs)");
+    } finally {
+      setSigningIn(false);
+    }
+  }, []);
+
   const signOut = useCallback(async () => {
     try {
       await api.post("/auth/logout", {});
@@ -160,7 +197,19 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   return (
-    <AuthContext.Provider value={{ user, loading, signingIn, signIn, signInWithApple, signOut, refreshUser }}>
+    <AuthContext.Provider
+      value={{
+        user,
+        loading,
+        signingIn,
+        signIn,
+        signInWithApple,
+        registerWithEmail,
+        loginWithEmail,
+        signOut,
+        refreshUser,
+      }}
+    >
       {children}
     </AuthContext.Provider>
   );

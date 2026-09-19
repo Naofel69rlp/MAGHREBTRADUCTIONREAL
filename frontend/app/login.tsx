@@ -12,6 +12,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import * as AppleAuthentication from "expo-apple-authentication";
 import { Feather } from "@expo/vector-icons";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { router } from "expo-router";
 
 import { useAuth } from "@/src/context/AuthContext";
 import { useToast } from "@/src/components/Toast";
@@ -108,6 +109,15 @@ export default function Login() {
             />
           )}
 
+          <Pressable
+            style={styles.emailButton}
+            onPress={() => router.push("/email-auth")}
+            testID="email-auth-button"
+          >
+            <Feather name="mail" size={20} color={colors.onBrand} />
+            <Text style={styles.emailText}>Continuer avec un email</Text>
+          </Pressable>
+
           <Text style={styles.legal}>{t("legal")}</Text>
         </View>
       </View>
@@ -194,6 +204,22 @@ const styles = StyleSheet.create({
   appleButton: {
     width: "100%",
     height: 54,
+  },
+  emailButton: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: spacing.sm,
+    backgroundColor: "rgba(253,251,247,0.12)",
+    borderWidth: 1,
+    borderColor: "rgba(253,251,247,0.3)",
+    paddingVertical: spacing.lg,
+    borderRadius: radius.pill,
+  },
+  emailText: {
+    fontFamily: fonts.bold,
+    fontSize: 16,
+    color: colors.onBrand,
   },
   legal: {
     fontFamily: fonts.regular,
