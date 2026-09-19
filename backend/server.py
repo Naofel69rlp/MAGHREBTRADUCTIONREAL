@@ -10,6 +10,7 @@ from typing import Optional
 
 import httpx
 import jwt
+import bcrypt
 from jwt import PyJWKClient
 from fastapi import FastAPI, APIRouter, Header, HTTPException, Depends, UploadFile, File, Form, Response
 from dotenv import load_dotenv
@@ -74,6 +75,20 @@ class GoogleAuthRequest(BaseModel):
     id_token: str
 
 
+class RegisterRequest(BaseModel):
+    username: str
+    first_name: str
+    last_name: str
+    email: str
+    password: str
+    phone: Optional[str] = None
+
+
+class LoginRequest(BaseModel):
+    email: str
+    password: str
+
+
 class AppleAuthRequest(BaseModel):
     identity_token: str
     name: Optional[str] = None
@@ -136,6 +151,8 @@ def _serialize_user(doc: dict) -> dict:
         "id": doc["user_id"],
         "email": doc["email"],
         "name": doc.get("name", ""),
+        "username": doc.get("username", ""),
+        "phone": doc.get("phone", ""),
         "picture": doc.get("picture", ""),
         "is_premium": _is_premium(doc),
     }
@@ -211,6 +228,74 @@ async def google_auth(payload: GoogleAuthRequest):
     })
 
     user = await db.users.find_one({"user_id": user_id}, {"_id": 0})
+    return {"session_token": session_token, "user": _serialize_user(user)}
+
+
+@api_router.post("/auth/register")
+async def register(payload: RegisterRequest):
+    email = payload.email.strip().lower()
+    username = payload.username.strip()
+    if not email or "@" not in email:
+        raise HTTPException(status_code=400, detail="Adresse email invalide")
+    if len(payload.password) < 6:
+        raise HTTPException(status_code=400, detail="Le mot de passe doit contenir au moins 6 caractères")
+    if not username:
+        raise HTTPException(status_code=400, detail="Nom d'utilisateur requis")
+
+    existing = await db.users.find_one({"email": email})
+    if existing:
+        raise HTTPException(status_code=409, detail="Un compte existe déjà avec cet email")
+    existing_username = await db.users.find_one({"username": username})
+    if existing_username:
+        raise HTTPException(status_code=409, detail="Ce nom d'utilisateur est déjà pris")
+
+    password_hash = bcrypt.hashpw(payload.password.encode("utf-8"), bcrypt.gensalt()).decode("utf-8")
+    user_id = f"user_{uuid.uuid4().hex[:12]}"
+    full_name = f"{payload.first_name.strip()} {payload.last_name.strip()}".strip()
+    await db.users.insert_one({
+        "user_id": user_id,
+        "email": email,
+        "username": username,
+        "first_name": payload.first_name.strip(),
+        "last_name": payload.last_name.strip(),
+        "name": full_name,
+        "phone": (payload.phone or "").strip(),
+        "password_hash": password_hash,
+        "picture": "",
+        "is_premium": False,
+        "created_at": _now(),
+    })
+
+    session_token = f"local_{uuid.uuid4().hex}"
+    await db.user_sessions.insert_one({
+        "session_token": session_token,
+        "user_id": user_id,
+        "created_at": _now(),
+        "expires_at": _now() + timedelta(days=7),
+    })
+
+    user = await db.users.find_one({"user_id": user_id}, {"_id": 0})
+    return {"session_token": session_token, "user": _serialize_user(user)}
+
+
+@api_router.post("/auth/login")
+async def login(payload: LoginRequest):
+    email = payload.email.strip().lower()
+    user = await db.users.find_one({"email": email})
+    if not user or not user.get("password_hash"):
+        raise HTTPException(status_code=401, detail="Email ou mot de passe incorrect")
+
+    if not bcrypt.checkpw(payload.password.encode("utf-8"), user["password_hash"].encode("utf-8")):
+        raise HTTPException(status_code=401, detail="Email ou mot de passe incorrect")
+
+    session_token = f"local_{uuid.uuid4().hex}"
+    await db.user_sessions.insert_one({
+        "session_token": session_token,
+        "user_id": user["user_id"],
+        "created_at": _now(),
+        "expires_at": _now() + timedelta(days=7),
+    })
+
     return {"session_token": session_token, "user": _serialize_user(user)}
 
 
@@ -835,6 +920,7 @@ app.add_middleware(
 @app.on_event("startup")
 async def startup():
     await db.users.create_index("email", unique=True)
+    await db.users.create_index("username", unique=True, sparse=True)
     await db.users.create_index("user_id", unique=True)
     await db.users.create_index("apple_sub", unique=True, sparse=True)
     await db.user_sessions.create_index("session_token", unique=True)
