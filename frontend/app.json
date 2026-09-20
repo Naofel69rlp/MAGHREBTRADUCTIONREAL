@@ -15,7 +15,8 @@
       "infoPlist": {
         "NSMicrophoneUsageDescription": "Dicter vos phrases à traduire par la voix",
         "NSCameraUsageDescription": "Photographier du texte à traduire",
-        "NSPhotoLibraryUsageDescription": "Choisir une image de texte à traduire"
+        "NSPhotoLibraryUsageDescription": "Choisir une image de texte à traduire",
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
@@ -29,11 +30,9 @@
       "permissions": [
         "android.permission.RECORD_AUDIO",
         "android.permission.CAMERA",
-        "android.permission.RECORD_AUDIO",
         "android.permission.MODIFY_AUDIO_SETTINGS",
         "android.permission.FOREGROUND_SERVICE",
-        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
-        "android.permission.CAMERA"
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
       ]
     },
     "web": {

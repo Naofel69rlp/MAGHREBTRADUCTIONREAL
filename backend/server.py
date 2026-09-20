@@ -21,6 +21,7 @@ from pydantic import BaseModel
 
 from openai import AsyncOpenAI
 import anthropic
+import google.generativeai as genai
 from google.oauth2 import id_token as google_id_token
 from google.auth.transport import requests as google_requests
 
@@ -36,12 +37,15 @@ db = client[os.environ['DB_NAME']]
 
 OPENAI_API_KEY = os.environ['OPENAI_API_KEY']
 ANTHROPIC_API_KEY = os.environ.get('ANTHROPIC_API_KEY', '')
+GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY', '')
 GOOGLE_CLIENT_IDS = [c.strip() for c in os.environ.get("GOOGLE_CLIENT_IDS", "").split(",") if c.strip()]
 RESEND_API_KEY = os.environ.get("RESEND_API_KEY", "")
 EMAIL_FROM = os.environ.get("EMAIL_FROM", "onboarding@resend.dev")
 
 openai_client = AsyncOpenAI(api_key=OPENAI_API_KEY)
 anthropic_client = anthropic.AsyncAnthropic(api_key=ANTHROPIC_API_KEY) if ANTHROPIC_API_KEY else None
+if GEMINI_API_KEY:
+    genai.configure(api_key=GEMINI_API_KEY)
 _google_request = google_requests.Request()
 
 APPLE_ISSUER = "https://appleid.apple.com"
@@ -620,6 +624,17 @@ _TRANSLATE_SYSTEM = "Tu es un traducteur professionnel des dialectes maghrébins
 
 async def _run_llm(prompt: str) -> str:
     last_err = None
+    if GEMINI_API_KEY:
+        try:
+            model = genai.GenerativeModel(
+                "gemini-2.5-flash",
+                system_instruction=_TRANSLATE_SYSTEM,
+            )
+            resp = await model.generate_content_async(prompt)
+            return resp.text
+        except Exception as e:  # noqa: BLE001
+            last_err = e
+            logger.warning("LLM provider gemini failed: %s", e)
     if anthropic_client:
         try:
             resp = await anthropic_client.messages.create(
@@ -754,7 +769,23 @@ _OCR_SYSTEM = "Tu es un expert en OCR et en traduction des dialectes maghrébins
 
 
 async def _run_llm_vision(prompt: str, image_base64: str) -> str:
+    import base64 as _b64
     last_err = None
+    if GEMINI_API_KEY:
+        try:
+            model = genai.GenerativeModel(
+                "gemini-2.5-flash",
+                system_instruction=_OCR_SYSTEM,
+            )
+            image_bytes = _b64.b64decode(image_base64)
+            resp = await model.generate_content_async([
+                prompt,
+                {"mime_type": "image/jpeg", "data": image_bytes},
+            ])
+            return resp.text
+        except Exception as e:  # noqa: BLE001
+            last_err = e
+            logger.warning("Vision LLM provider gemini failed: %s", e)
     if anthropic_client:
         try:
             resp = await anthropic_client.messages.create(

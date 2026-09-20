@@ -2,6 +2,7 @@ import React, { useMemo, useState } from "react";
 import {
   ActivityIndicator,
   ImageBackground,
+  Linking,
   Modal,
   Pressable,
   ScrollView,
@@ -209,6 +210,21 @@ export default function Premium() {
               )}
             </Pressable>
           )}
+          <View style={styles.legalRow}>
+            <Pressable
+              onPress={() => Linking.openURL("https://claude.ai/artifact/ND71x4KbzdU4NHgUzxx55T")}
+            >
+              <Text style={styles.legalLink}>Politique de confidentialité</Text>
+            </Pressable>
+            <Text style={styles.legalDot}>·</Text>
+            <Pressable
+              onPress={() =>
+                Linking.openURL("https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")
+              }
+            >
+              <Text style={styles.legalLink}>Conditions d'utilisation</Text>
+            </Pressable>
+          </View>
         </View>
       </ScrollView>
 
@@ -325,6 +341,24 @@ const styles = StyleSheet.create({
   tapHint: { fontFamily: fonts.regular, fontSize: 12, color: "rgba(253,251,247,0.6)", textAlign: "center" },
   restore: { paddingVertical: spacing.md, alignItems: "center" },
   restoreText: { fontFamily: fonts.semibold, fontSize: 14, color: colors.gold },
+  legalRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: spacing.xs,
+    paddingBottom: spacing.sm,
+  },
+  legalLink: {
+    fontFamily: fonts.regular,
+    fontSize: 12,
+    color: "rgba(253,251,247,0.6)",
+    textDecorationLine: "underline",
+  },
+  legalDot: {
+    fontFamily: fonts.regular,
+    fontSize: 12,
+    color: "rgba(253,251,247,0.4)",
+  },
   modalOverlay: {
     flex: 1,
     backgroundColor: "rgba(0,0,0,0.55)",
