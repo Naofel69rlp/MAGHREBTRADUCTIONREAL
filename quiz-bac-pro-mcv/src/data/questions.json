@@ -1,0 +1,3824 @@
+[
+  {
+    "id": "b1-001",
+    "theme": "bloc1",
+    "difficulte": 1,
+    "question": "Quelle est la première étape de l'entretien de vente ?",
+    "reponses": [
+      "La prise de contact",
+      "La conclusion",
+      "L'argumentation",
+      "Le traitement des objections"
+    ],
+    "bonneReponse": 0,
+    "explication": "La prise de contact ouvre l'entretien : elle crée un climat de confiance dès les premières secondes."
+  },
+  {
+    "id": "b1-002",
+    "theme": "bloc1",
+    "difficulte": 1,
+    "question": "Dans quel ordre se déroulent ces étapes de la vente ?",
+    "reponses": [
+      "Découverte des besoins, argumentation, conclusion",
+      "Argumentation, découverte des besoins, conclusion",
+      "Conclusion, argumentation, découverte des besoins",
+      "Découverte des besoins, conclusion, argumentation"
+    ],
+    "bonneReponse": 0,
+    "explication": "On identifie d'abord les besoins du client, ensuite on argumente pour y répondre, enfin on conclut."
+  },
+  {
+    "id": "b1-003",
+    "theme": "bloc1",
+    "difficulte": 1,
+    "question": "Que signifie le sigle SONCAS ?",
+    "reponses": [
+      "Service, Offre, Nouveauté, Cadeau, Achat, Satisfaction",
+      "Sécurité, Offre, Nécessité, Confort, Avantage, Sympathie",
+      "Sécurité, Orgueil, Nouveauté, Confort, Argent, Sympathie",
+      "Satisfaction, Orgueil, Nécessité, Conseil, Argent, Service"
+    ],
+    "bonneReponse": 2,
+    "explication": "SONCAS regroupe les six mobiles d'achat : Sécurité, Orgueil, Nouveauté, Confort, Argent, Sympathie."
+  },
+  {
+    "id": "b1-004",
+    "theme": "bloc1",
+    "difficulte": 1,
+    "question": "Un client dit : « Je veux un appareil qui ne tombe jamais en panne ». Quel mobile d'achat exprime-t-il ?",
+    "reponses": [
+      "Nouveauté",
+      "Orgueil",
+      "Sécurité",
+      "Sympathie"
+    ],
+    "bonneReponse": 2,
+    "explication": "Le client cherche à être rassuré sur la fiabilité et à éviter tout risque : c'est le mobile Sécurité."
+  },
+  {
+    "id": "b1-005",
+    "theme": "bloc1",
+    "difficulte": 1,
+    "question": "Un client dit : « Je veux le tout dernier modèle, celui qui vient de sortir ». Quel mobile d'achat ?",
+    "reponses": [
+      "Confort",
+      "Argent",
+      "Sécurité",
+      "Nouveauté"
+    ],
+    "bonneReponse": 3,
+    "explication": "Attirance pour ce qui est récent, innovant ou tendance : c'est le mobile Nouveauté."
+  },
+  {
+    "id": "b1-006",
+    "theme": "bloc1",
+    "difficulte": 2,
+    "question": "Un client dit : « Je veux quelque chose de pratique, facile à utiliser au quotidien ». Quel mobile d'achat ?",
+    "reponses": [
+      "Confort",
+      "Sécurité",
+      "Orgueil",
+      "Argent"
+    ],
+    "bonneReponse": 0,
+    "explication": "Le Confort regroupe la praticité, la facilité d'usage et le gain de temps ou d'effort."
+  },
+  {
+    "id": "b1-007",
+    "theme": "bloc1",
+    "difficulte": 2,
+    "question": "Un client dit : « Je cherche une marque prestigieuse, qui se remarque ». Quel mobile d'achat ?",
+    "reponses": [
+      "Sympathie",
+      "Orgueil",
+      "Nouveauté",
+      "Confort"
+    ],
+    "bonneReponse": 1,
+    "explication": "L'Orgueil correspond au besoin de valorisation de son image et de son statut."
+  },
+  {
+    "id": "b1-008",
+    "theme": "bloc1",
+    "difficulte": 2,
+    "question": "Un client demande : « Y a-t-il une promotion ? Quel est le moins cher ? ». Quel mobile d'achat ?",
+    "reponses": [
+      "Sécurité",
+      "Confort",
+      "Argent",
+      "Sympathie"
+    ],
+    "bonneReponse": 2,
+    "explication": "L'Argent concerne le prix, l'économie, la rentabilité et les bonnes affaires."
+  },
+  {
+    "id": "b1-009",
+    "theme": "bloc1",
+    "difficulte": 2,
+    "question": "Un client revient dans un magasin parce que le vendeur est chaleureux et à l'écoute. Quel mobile d'achat ?",
+    "reponses": [
+      "Orgueil",
+      "Argent",
+      "Sympathie",
+      "Nouveauté"
+    ],
+    "bonneReponse": 2,
+    "explication": "La Sympathie : le client achète auprès de quelqu'un avec qui il se sent bien."
+  },
+  {
+    "id": "b1-010",
+    "theme": "bloc1",
+    "difficulte": 1,
+    "question": "Quel type de question permet au client de s'exprimer librement ?",
+    "reponses": [
+      "Une question fermée",
+      "Une question alternative",
+      "Une question rhétorique",
+      "Une question ouverte"
+    ],
+    "bonneReponse": 3,
+    "explication": "Une question ouverte (Comment ? Pourquoi ? Qu'est-ce que ?) appelle une réponse développée."
+  },
+  {
+    "id": "b1-011",
+    "theme": "bloc1",
+    "difficulte": 1,
+    "question": "Laquelle de ces questions est une question fermée ?",
+    "reponses": [
+      "« Utilisez-vous cet appareil tous les jours ? »",
+      "« Comment utilisez-vous cet appareil ? »",
+      "« Qu'attendez-vous de ce produit ? »",
+      "« Pourquoi cherchez-vous un nouveau modèle ? »"
+    ],
+    "bonneReponse": 0,
+    "explication": "Une question fermée appelle une réponse courte (oui/non) ; elle sert surtout à valider une information."
+  },
+  {
+    "id": "b1-012",
+    "theme": "bloc1",
+    "difficulte": 2,
+    "question": "À quoi sert la reformulation pendant la découverte des besoins ?",
+    "reponses": [
+      "À parler à la place du client pour gagner du temps",
+      "À imposer le produit que le vendeur préfère",
+      "À vérifier qu'on a bien compris et à faire valider le besoin par le client",
+      "À clôturer rapidement la vente"
+    ],
+    "bonneReponse": 2,
+    "explication": "Reformuler montre l'écoute et permet de valider le besoin avant d'argumenter."
+  },
+  {
+    "id": "b1-013",
+    "theme": "bloc1",
+    "difficulte": 2,
+    "question": "Que signifie CAP dans l'argumentation ?",
+    "reponses": [
+      "Client, Argument, Prix",
+      "Conseil, Accueil, Prise de congé",
+      "Conclusion, Argumentation, Prospection",
+      "Caractéristique, Avantage, Preuve"
+    ],
+    "bonneReponse": 3,
+    "explication": "CAP : on présente une Caractéristique du produit, l'Avantage pour le client, puis une Preuve."
+  },
+  {
+    "id": "b1-014",
+    "theme": "bloc1",
+    "difficulte": 2,
+    "question": "« Ce sac est en cuir pleine fleur » : dans la méthode CAP, c'est…",
+    "reponses": [
+      "Une caractéristique",
+      "Un avantage",
+      "Une preuve",
+      "Une objection"
+    ],
+    "bonneReponse": 0,
+    "explication": "Une caractéristique décrit objectivement le produit (matière, taille, composition)."
+  },
+  {
+    "id": "b1-015",
+    "theme": "bloc1",
+    "difficulte": 2,
+    "question": "« Il résiste à l'usure et durera de nombreuses années » : dans la méthode CAP, c'est…",
+    "reponses": [
+      "Une caractéristique",
+      "Une preuve",
+      "Un avantage",
+      "Un mobile d'achat"
+    ],
+    "bonneReponse": 2,
+    "explication": "L'avantage explique ce que la caractéristique apporte au client."
+  },
+  {
+    "id": "b1-016",
+    "theme": "bloc1",
+    "difficulte": 2,
+    "question": "« Il est garanti 5 ans, regardez le certificat » : dans la méthode CAP, c'est…",
+    "reponses": [
+      "Une caractéristique",
+      "Une preuve",
+      "Un avantage",
+      "Une question de découverte"
+    ],
+    "bonneReponse": 1,
+    "explication": "La preuve rend l'argument crédible (garantie, label, témoignage, démonstration, essai)."
+  },
+  {
+    "id": "b1-017",
+    "theme": "bloc1",
+    "difficulte": 2,
+    "question": "Un client te dit « C'est trop cher ». Que fais-tu en premier ?",
+    "reponses": [
+      "Je baisse immédiatement le prix",
+      "J'écoute, je reformule l'objection puis je valorise les avantages au regard du prix",
+      "Je lui dis qu'il se trompe",
+      "Je change de sujet"
+    ],
+    "bonneReponse": 1,
+    "explication": "Il faut d'abord comprendre l'objection, puis montrer la valeur du produit avant toute concession."
+  },
+  {
+    "id": "b1-018",
+    "theme": "bloc1",
+    "difficulte": 2,
+    "question": "Une objection du client est…",
+    "reponses": [
+      "Un refus définitif d'acheter",
+      "Une réclamation sur un achat passé",
+      "Une faute du vendeur",
+      "Une réserve qui montre qu'il s'intéresse mais hésite"
+    ],
+    "bonneReponse": 3,
+    "explication": "L'objection est souvent un signe d'intérêt : le client demande à être rassuré."
+  },
+  {
+    "id": "b1-019",
+    "theme": "bloc1",
+    "difficulte": 3,
+    "question": "La méthode du « boomerang » en traitement d'objection consiste à…",
+    "reponses": [
+      "Ignorer l'objection pour continuer l'argumentation",
+      "Retourner l'objection du client en argument en faveur du produit",
+      "Proposer immédiatement une remise",
+      "Reporter la discussion à une autre visite"
+    ],
+    "bonneReponse": 1,
+    "explication": "Exemple : « C'est trop petit » → « Justement, il se range partout et se transporte facilement »."
+  },
+  {
+    "id": "b1-020",
+    "theme": "bloc1",
+    "difficulte": 3,
+    "question": "Le client dit : « Je vais réfléchir ». Quelle réponse est la plus pertinente ?",
+    "reponses": [
+      "« Dépêchez-vous, il n'y en aura plus demain »",
+      "« Très bien, au revoir »",
+      "« Vous avez tort d'hésiter »",
+      "« Bien sûr. Qu'est-ce qui vous fait hésiter précisément ? »"
+    ],
+    "bonneReponse": 3,
+    "explication": "Il faut chercher l'objection cachée en posant une question ouverte, sans pression."
+  },
+  {
+    "id": "b1-021",
+    "theme": "bloc1",
+    "difficulte": 2,
+    "question": "Lequel de ces éléments est un signal d'achat verbal ?",
+    "reponses": [
+      "« Je regarde juste »",
+      "« Je repasserai »",
+      "« C'est trop loin »",
+      "« Vous l'avez en bleu ? Vous livrez ? »"
+    ],
+    "bonneReponse": 3,
+    "explication": "Les questions sur la couleur, la livraison ou le paiement montrent que le client se projette dans l'achat."
+  },
+  {
+    "id": "b1-022",
+    "theme": "bloc1",
+    "difficulte": 2,
+    "question": "Lequel de ces comportements est un signal d'achat non verbal ?",
+    "reponses": [
+      "Le client regarde sa montre",
+      "Le client recule vers la sortie",
+      "Le client essaie le produit et ne le repose pas",
+      "Le client croise les bras"
+    ],
+    "bonneReponse": 2,
+    "explication": "Garder le produit en main, l'essayer longuement : le client s'approprie déjà l'article."
+  },
+  {
+    "id": "b1-023",
+    "theme": "bloc1",
+    "difficulte": 1,
+    "question": "À quel moment annonce-t-on généralement le prix ?",
+    "reponses": [
+      "Dès l'accueil, avant toute question",
+      "Après l'argumentation, en le justifiant par la valeur apportée",
+      "Jamais, le client le lit sur l'étiquette",
+      "À la toute fin, en chuchotant"
+    ],
+    "bonneReponse": 1,
+    "explication": "Le prix s'annonce une fois la valeur du produit démontrée, pour qu'il paraisse justifié."
+  },
+  {
+    "id": "b1-024",
+    "theme": "bloc1",
+    "difficulte": 1,
+    "question": "La conclusion de la vente consiste à…",
+    "reponses": [
+      "Parler du produit pendant plusieurs minutes",
+      "Amener le client à décider et valider l'achat",
+      "Prendre congé sans rien proposer",
+      "Poser des questions de découverte"
+    ],
+    "bonneReponse": 1,
+    "explication": "Conclure, c'est obtenir l'accord du client et finaliser la vente (commande, encaissement)."
+  },
+  {
+    "id": "b1-025",
+    "theme": "bloc1",
+    "difficulte": 2,
+    "question": "« Préférez-vous le modèle rouge ou le noir ? » est une technique de conclusion appelée…",
+    "reponses": [
+      "La question ouverte",
+      "La question alternative (choix)",
+      "La menace de pénurie",
+      "La remise exceptionnelle"
+    ],
+    "bonneReponse": 1,
+    "explication": "Proposer un choix entre deux options présuppose que le client achète."
+  },
+  {
+    "id": "b1-026",
+    "theme": "bloc1",
+    "difficulte": 2,
+    "question": "Proposer une coque de protection à un client qui achète un smartphone, c'est…",
+    "reponses": [
+      "Une montée en gamme",
+      "Une vente additionnelle (produit complémentaire)",
+      "Une vente forcée",
+      "Un remboursement"
+    ],
+    "bonneReponse": 1,
+    "explication": "On propose un article qui complète l'achat principal pour mieux répondre au besoin."
+  },
+  {
+    "id": "b1-027",
+    "theme": "bloc1",
+    "difficulte": 2,
+    "question": "Proposer à un client le modèle supérieur, plus complet que celui qu'il regardait, c'est…",
+    "reponses": [
+      "Une vente additionnelle d'accessoire",
+      "Un déstockage",
+      "Une montée en gamme",
+      "Une remise de fidélité"
+    ],
+    "bonneReponse": 2,
+    "explication": "La montée en gamme oriente le client vers un produit plus haut de gamme, donc plus cher."
+  },
+  {
+    "id": "b1-028",
+    "theme": "bloc1",
+    "difficulte": 2,
+    "question": "Quel est l'intérêt principal de la vente additionnelle pour l'entreprise ?",
+    "reponses": [
+      "Augmenter le panier moyen tout en répondant à un besoin du client",
+      "Écouler les produits défectueux",
+      "Éviter de faire la découverte des besoins",
+      "Diminuer le nombre de clients"
+    ],
+    "bonneReponse": 0,
+    "explication": "Elle augmente le montant du ticket et améliore le service rendu au client."
+  },
+  {
+    "id": "b1-029",
+    "theme": "bloc1",
+    "difficulte": 3,
+    "question": "À quel moment propose-t-on la vente additionnelle ?",
+    "reponses": [
+      "Une fois que le client a donné son accord sur le produit principal",
+      "Dès l'entrée dans le magasin",
+      "Après que le client a refusé d'acheter",
+      "Avant de connaître son besoin"
+    ],
+    "bonneReponse": 0,
+    "explication": "Le client est dans une dynamique d'achat : la proposition d'un complément est alors mieux acceptée."
+  },
+  {
+    "id": "b1-030",
+    "theme": "bloc1",
+    "difficulte": 1,
+    "question": "Quelle est la bonne attitude lors de la prise de congé ?",
+    "reponses": [
+      "Partir sans rien dire pour ne pas déranger",
+      "Critiquer la concurrence pour le fidéliser",
+      "Insister pour qu'il rachète aujourd'hui",
+      "Remercier le client, rappeler le service après-vente et l'inviter à revenir"
+    ],
+    "bonneReponse": 3,
+    "explication": "La prise de congé laisse une bonne dernière impression et prépare la fidélisation."
+  },
+  {
+    "id": "b1-031",
+    "theme": "bloc1",
+    "difficulte": 2,
+    "question": "Pendant la découverte des besoins, qui doit parler le plus ?",
+    "reponses": [
+      "Le vendeur",
+      "Le client",
+      "Le vendeur et le client à parts égales",
+      "Un collègue"
+    ],
+    "bonneReponse": 1,
+    "explication": "La découverte repose sur l'écoute active : le client exprime son besoin, le vendeur questionne et reformule."
+  },
+  {
+    "id": "b1-032",
+    "theme": "bloc1",
+    "difficulte": 3,
+    "question": "Un client dit : « Je veux être sûr de pouvoir l'échanger si ça ne me convient pas ». Quel mobile SONCAS ?",
+    "reponses": [
+      "Sécurité",
+      "Confort",
+      "Sympathie",
+      "Nouveauté"
+    ],
+    "bonneReponse": 0,
+    "explication": "Le client cherche une garantie, un moyen de limiter le risque : mobile Sécurité."
+  },
+  {
+    "id": "b1-033",
+    "theme": "bloc1",
+    "difficulte": 2,
+    "question": "Un client dit : « Je ne veux pas passer des heures à le monter ». Quel argument est le plus adapté ?",
+    "reponses": [
+      "« C'est le moins cher de la gamme »",
+      "« Il est livré monté et prêt à l'emploi »",
+      "« Toutes les stars en ont un »",
+      "« C'est la dernière nouveauté »"
+    ],
+    "bonneReponse": 1,
+    "explication": "Le mobile est le Confort : il faut répondre par un argument de simplicité et de gain de temps."
+  },
+  {
+    "id": "b1-034",
+    "theme": "bloc1",
+    "difficulte": 3,
+    "question": "Dans quel cas parle-t-on d'objection « prétexte » ?",
+    "reponses": [
+      "Quand le client exprime un vrai problème sur le produit",
+      "Quand le client avance une raison qui masque la vraie raison de son hésitation",
+      "Quand le client réclame un remboursement",
+      "Quand le client dit oui immédiatement"
+    ],
+    "bonneReponse": 1,
+    "explication": "« Je n'ai pas le temps » peut cacher un autre frein ; il faut le découvrir par le questionnement."
+  },
+  {
+    "id": "b1-035",
+    "theme": "bloc1",
+    "difficulte": 1,
+    "question": "Quel est l'objectif principal de l'accueil du client ?",
+    "reponses": [
+      "Présenter immédiatement les promotions",
+      "Faire signer un bon de commande",
+      "Établir un contact agréable et donner envie de poursuivre l'échange",
+      "Annoncer le prix"
+    ],
+    "bonneReponse": 2,
+    "explication": "Un accueil souriant et disponible instaure la confiance nécessaire à la suite de l'entretien."
+  },
+  {
+    "id": "b2-001",
+    "theme": "bloc2",
+    "difficulte": 1,
+    "question": "Quel document accompagne la marchandise livrée et atteste de sa remise au client ?",
+    "reponses": [
+      "Le devis",
+      "Le bon de réduction",
+      "Le catalogue",
+      "Le bon de livraison"
+    ],
+    "bonneReponse": 3,
+    "explication": "Le bon de livraison liste les produits livrés ; le client le signe à la réception."
+  },
+  {
+    "id": "b2-002",
+    "theme": "bloc2",
+    "difficulte": 1,
+    "question": "À la réception d'une commande, que doit vérifier le client en premier ?",
+    "reponses": [
+      "La conformité (quantité, référence, état) par rapport à la commande",
+      "Uniquement la couleur de l'emballage",
+      "Le nom du livreur",
+      "Le prix de vente conseillé"
+    ],
+    "bonneReponse": 0,
+    "explication": "Il faut contrôler que la livraison correspond à la commande passée et que rien n'est abîmé."
+  },
+  {
+    "id": "b2-003",
+    "theme": "bloc2",
+    "difficulte": 2,
+    "question": "Un colis arrive abîmé. Quelle bonne pratique pour le client professionnel ?",
+    "reponses": [
+      "Accepter sans rien dire pour gagner du temps",
+      "Refuser de payer sans prévenir",
+      "Jeter le colis",
+      "Émettre des réserves précises sur le bon de livraison puis les confirmer par courrier recommandé"
+    ],
+    "bonneReponse": 3,
+    "explication": "Les réserves doivent être écrites sur le bon de livraison puis confirmées par lettre recommandée au transporteur dans les 3 jours (hors jours fériés)."
+  },
+  {
+    "id": "b2-004",
+    "theme": "bloc2",
+    "difficulte": 1,
+    "question": "Quelle est la bonne chronologie des documents de vente ?",
+    "reponses": [
+      "Facture, devis, bon de livraison, bon de commande",
+      "Devis, bon de commande, bon de livraison, facture",
+      "Bon de livraison, devis, facture, bon de commande",
+      "Bon de commande, facture, devis, bon de livraison"
+    ],
+    "bonneReponse": 1,
+    "explication": "Le devis précède la commande, la livraison suit, puis la facture est établie."
+  },
+  {
+    "id": "b2-005",
+    "theme": "bloc2",
+    "difficulte": 2,
+    "question": "Quel document le vendeur remet-il pour demander le paiement d'une vente ?",
+    "reponses": [
+      "Le bon de livraison",
+      "La facture",
+      "Le devis",
+      "Le bon de commande"
+    ],
+    "bonneReponse": 1,
+    "explication": "La facture est le document comptable qui réclame le paiement ; elle est obligatoire entre professionnels."
+  },
+  {
+    "id": "b2-006",
+    "theme": "bloc2",
+    "difficulte": 2,
+    "question": "Laquelle de ces mentions doit obligatoirement figurer sur une facture ?",
+    "reponses": [
+      "Le salaire du vendeur",
+      "Le prix d'achat du produit",
+      "La couleur du logo",
+      "Le numéro de facture et la date"
+    ],
+    "bonneReponse": 3,
+    "explication": "Une facture comporte notamment numéro, date, identité des parties, désignation, prix HT, TVA, total TTC."
+  },
+  {
+    "id": "b2-007",
+    "theme": "bloc2",
+    "difficulte": 3,
+    "question": "Quel est le délai de paiement maximum légal entre professionnels ?",
+    "reponses": [
+      "15 jours après la livraison",
+      "120 jours après la commande",
+      "60 jours à compter de la date de facture (ou 45 jours fin de mois)",
+      "6 mois"
+    ],
+    "bonneReponse": 2,
+    "explication": "La loi plafonne le délai à 60 jours date de facture, ou 45 jours fin de mois, sauf délai plus court convenu."
+  },
+  {
+    "id": "b2-008",
+    "theme": "bloc2",
+    "difficulte": 1,
+    "question": "Que recouvre le service après-vente (SAV) ?",
+    "reponses": [
+      "Uniquement les promotions",
+      "Le choix du produit en rayon",
+      "Les services proposés après l'achat : installation, réparation, échange, assistance",
+      "La prise de contact"
+    ],
+    "bonneReponse": 2,
+    "explication": "Le SAV prolonge la relation après la vente et contribue à la satisfaction et à la fidélité."
+  },
+  {
+    "id": "b2-009",
+    "theme": "bloc2",
+    "difficulte": 2,
+    "question": "Un client est mécontent : quelle est la première attitude à adopter ?",
+    "reponses": [
+      "Lui expliquer que ce n'est pas notre faute",
+      "Lui proposer immédiatement un remboursement sans comprendre",
+      "L'écouter sans l'interrompre",
+      "Le renvoyer vers un collègue"
+    ],
+    "bonneReponse": 2,
+    "explication": "Écouter permet de faire baisser la tension et de comprendre le motif exact de la réclamation."
+  },
+  {
+    "id": "b2-010",
+    "theme": "bloc2",
+    "difficulte": 2,
+    "question": "Dans quel ordre traite-t-on une réclamation ?",
+    "reponses": [
+      "Proposer une solution, écouter, conclure",
+      "S'excuser, couper la parole, raccrocher",
+      "Écouter, reformuler, proposer une solution, vérifier la satisfaction",
+      "Argumenter, contredire, conclure"
+    ],
+    "bonneReponse": 2,
+    "explication": "On comprend d'abord le problème, on le reformule, on apporte une solution puis on s'assure que le client est satisfait."
+  },
+  {
+    "id": "b2-011",
+    "theme": "bloc2",
+    "difficulte": 2,
+    "question": "Un client réclame un article défectueux acheté il y a 3 semaines. Que fais-tu ?",
+    "reponses": [
+      "Je vérifie l'achat (ticket, état), je m'excuse et je propose une solution (échange, réparation, remboursement)",
+      "Je lui dis que c'est de sa faute",
+      "Je lui demande de revenir le mois prochain",
+      "Je lui propose un coupon sans regarder le produit"
+    ],
+    "bonneReponse": 0,
+    "explication": "On vérifie les faits puis on applique la garantie ou la politique commerciale du magasin."
+  },
+  {
+    "id": "b2-012",
+    "theme": "bloc2",
+    "difficulte": 2,
+    "question": "Que signifie « traiter une réclamation » pour l'entreprise ?",
+    "reponses": [
+      "Une perte de temps à éviter",
+      "Un moyen de faire une vente additionnelle forcée",
+      "Une sanction pour le vendeur",
+      "Une occasion de rétablir la confiance et de fidéliser le client"
+    ],
+    "bonneReponse": 3,
+    "explication": "Un client dont la réclamation est bien traitée devient souvent plus fidèle."
+  },
+  {
+    "id": "b2-013",
+    "theme": "bloc2",
+    "difficulte": 1,
+    "question": "Quel moyen de paiement est dit « dématérialisé » ?",
+    "reponses": [
+      "Les espèces",
+      "Le chèque papier",
+      "Le bon cadeau papier",
+      "La carte bancaire"
+    ],
+    "bonneReponse": 3,
+    "explication": "La carte bancaire, comme le virement, n'implique pas de manipuler de la monnaie physique."
+  },
+  {
+    "id": "b2-014",
+    "theme": "bloc2",
+    "difficulte": 2,
+    "question": "Quelle vérification est indispensable lors de l'encaissement d'un chèque ?",
+    "reponses": [
+      "La couleur du chèque",
+      "Date, montant en lettres et en chiffres, signature, ordre",
+      "La marque de la banque",
+      "Le prénom du vendeur"
+    ],
+    "bonneReponse": 1,
+    "explication": "Un chèque incomplet ou incohérent peut être rejeté : on contrôle ces mentions et l'identité du client."
+  },
+  {
+    "id": "b2-015",
+    "theme": "bloc2",
+    "difficulte": 2,
+    "question": "Quel est le plafond de paiement en espèces autorisé pour un client résident en France chez un commerçant ?",
+    "reponses": [
+      "300 €",
+      "10 000 €",
+      "1 000 €",
+      "Il n'y a aucun plafond"
+    ],
+    "bonneReponse": 2,
+    "explication": "Le paiement en espèces est limité à 1 000 € pour un résident fiscal français."
+  },
+  {
+    "id": "b2-016",
+    "theme": "bloc2",
+    "difficulte": 2,
+    "question": "Que fait-on à la fin de la journée de caisse (arrêté de caisse) ?",
+    "reponses": [
+      "On efface les tickets",
+      "On compare l'argent compté avec le montant théorique des ventes",
+      "On renvoie les clients",
+      "On modifie les prix"
+    ],
+    "bonneReponse": 1,
+    "explication": "Cela permet de repérer un éventuel écart de caisse (manque ou excédent)."
+  },
+  {
+    "id": "b2-017",
+    "theme": "bloc2",
+    "difficulte": 1,
+    "question": "Un client paie 17,40 € avec un billet de 20 €. Combien lui rends-tu ?",
+    "reponses": [
+      "3,60 €",
+      "2,40 €",
+      "2,60 €",
+      "3,40 €"
+    ],
+    "bonneReponse": 2,
+    "explication": "20 − 17,40 = 2,60 €."
+  },
+  {
+    "id": "b2-018",
+    "theme": "bloc2",
+    "difficulte": 2,
+    "question": "Un client achète pour 38,50 € et donne 50 €. Quelle monnaie lui rends-tu ?",
+    "reponses": [
+      "12,50 €",
+      "11,00 €",
+      "11,50 €",
+      "10,50 €"
+    ],
+    "bonneReponse": 2,
+    "explication": "50 − 38,50 = 11,50 €."
+  },
+  {
+    "id": "b2-019",
+    "theme": "bloc2",
+    "difficulte": 1,
+    "question": "Comment se calcule le chiffre d'affaires (CA) ?",
+    "reponses": [
+      "Prix d'achat × quantités achetées",
+      "Marge − charges",
+      "Prix de vente − remise",
+      "Quantités vendues × prix de vente"
+    ],
+    "bonneReponse": 3,
+    "explication": "Le CA correspond au total des ventes réalisées sur une période."
+  },
+  {
+    "id": "b2-020",
+    "theme": "bloc2",
+    "difficulte": 2,
+    "question": "Un magasin vend 120 articles à 25 € HT l'un. Quel est son chiffre d'affaires HT ?",
+    "reponses": [
+      "2 400 €",
+      "3 000 €",
+      "145 €",
+      "30 000 €"
+    ],
+    "bonneReponse": 1,
+    "explication": "120 × 25 = 3 000 €."
+  },
+  {
+    "id": "b2-021",
+    "theme": "bloc2",
+    "difficulte": 2,
+    "question": "Comment calcule-t-on le panier moyen ?",
+    "reponses": [
+      "Chiffre d'affaires ÷ nombre de tickets (clients)",
+      "Chiffre d'affaires ÷ nombre d'articles",
+      "Nombre de tickets ÷ chiffre d'affaires",
+      "Marge ÷ chiffre d'affaires"
+    ],
+    "bonneReponse": 0,
+    "explication": "Le panier moyen est le montant moyen dépensé par client lors d'un passage en caisse."
+  },
+  {
+    "id": "b2-022",
+    "theme": "bloc2",
+    "difficulte": 2,
+    "question": "Un magasin réalise 4 500 € de CA avec 150 tickets de caisse. Quel est le panier moyen ?",
+    "reponses": [
+      "150 €",
+      "30 €",
+      "45 €",
+      "3 €"
+    ],
+    "bonneReponse": 1,
+    "explication": "4 500 ÷ 150 = 30 €."
+  },
+  {
+    "id": "b2-023",
+    "theme": "bloc2",
+    "difficulte": 2,
+    "question": "Comment calcule-t-on l'indice de vente (indice de consommation) ?",
+    "reponses": [
+      "Chiffre d'affaires ÷ nombre de tickets",
+      "Nombre de tickets ÷ nombre de visiteurs",
+      "Nombre d'articles vendus ÷ nombre de tickets",
+      "Nombre de visiteurs ÷ nombre d'articles"
+    ],
+    "bonneReponse": 2,
+    "explication": "L'indice de vente indique le nombre moyen d'articles par client."
+  },
+  {
+    "id": "b2-024",
+    "theme": "bloc2",
+    "difficulte": 2,
+    "question": "300 articles ont été vendus pour 120 tickets de caisse. Quel est l'indice de vente ?",
+    "reponses": [
+      "0,4 article par ticket",
+      "180",
+      "2,5 articles par ticket",
+      "3,6 articles par ticket"
+    ],
+    "bonneReponse": 2,
+    "explication": "300 ÷ 120 = 2,5."
+  },
+  {
+    "id": "b2-025",
+    "theme": "bloc2",
+    "difficulte": 2,
+    "question": "Comment calcule-t-on le taux de transformation en magasin ?",
+    "reponses": [
+      "Nombre de visiteurs ÷ nombre d'acheteurs × 100",
+      "Chiffre d'affaires ÷ visiteurs",
+      "Nombre de tickets × panier moyen",
+      "Nombre d'acheteurs ÷ nombre de visiteurs × 100"
+    ],
+    "bonneReponse": 3,
+    "explication": "Il mesure la part des visiteurs qui ont réellement acheté."
+  },
+  {
+    "id": "b2-026",
+    "theme": "bloc2",
+    "difficulte": 2,
+    "question": "450 personnes sont entrées dans le magasin et 90 ont acheté. Quel est le taux de transformation ?",
+    "reponses": [
+      "5 %",
+      "20 %",
+      "50 %",
+      "80 %"
+    ],
+    "bonneReponse": 1,
+    "explication": "90 ÷ 450 × 100 = 20 %."
+  },
+  {
+    "id": "b2-027",
+    "theme": "bloc2",
+    "difficulte": 3,
+    "question": "Quelle action permet d'augmenter le panier moyen ?",
+    "reponses": [
+      "Réduire le nombre de références",
+      "Diminuer la qualité de l'accueil",
+      "Fermer le magasin plus tôt",
+      "Proposer des ventes additionnelles et des offres groupées"
+    ],
+    "bonneReponse": 3,
+    "explication": "Faire acheter plus d'articles ou des articles plus chers augmente le montant du ticket."
+  },
+  {
+    "id": "b2-028",
+    "theme": "bloc2",
+    "difficulte": 3,
+    "question": "Le CA d'un magasin passe de 40 000 € à 46 000 €. Quel est le taux d'évolution ?",
+    "reponses": [
+      "+ 6 %",
+      "+ 13 %",
+      "+ 15 %",
+      "+ 20 %"
+    ],
+    "bonneReponse": 2,
+    "explication": "(46 000 − 40 000) ÷ 40 000 × 100 = 15 %."
+  },
+  {
+    "id": "b2-029",
+    "theme": "bloc2",
+    "difficulte": 2,
+    "question": "Le chiffre d'affaires d'un rayon passe de 8 000 € à 6 000 €. Quelle est l'évolution ?",
+    "reponses": [
+      "− 25 %",
+      "− 33 %",
+      "− 20 %",
+      "− 2 000 %"
+    ],
+    "bonneReponse": 0,
+    "explication": "(6 000 − 8 000) ÷ 8 000 × 100 = − 25 %."
+  },
+  {
+    "id": "b2-030",
+    "theme": "bloc2",
+    "difficulte": 3,
+    "question": "Que désigne la « démarque inconnue » dans un magasin ?",
+    "reponses": [
+      "Les remises accordées aux clients",
+      "Les produits en promotion",
+      "Les pertes de stock non expliquées (vols, erreurs, casse non déclarée)",
+      "Les retours de marchandises enregistrés"
+    ],
+    "bonneReponse": 2,
+    "explication": "Elle correspond à l'écart entre le stock théorique et le stock réel constaté à l'inventaire."
+  },
+  {
+    "id": "b2-031",
+    "theme": "bloc2",
+    "difficulte": 1,
+    "question": "Quel est l'intérêt de proposer un service de livraison ?",
+    "reponses": [
+      "Augmenter les réclamations",
+      "Faciliter l'achat du client et renforcer sa satisfaction",
+      "Remplacer l'accueil du client",
+      "Supprimer le SAV"
+    ],
+    "bonneReponse": 1,
+    "explication": "Un service pratique est un avantage concurrentiel et améliore l'expérience client."
+  },
+  {
+    "id": "b2-032",
+    "theme": "bloc2",
+    "difficulte": 3,
+    "question": "Un client réclame car la livraison a eu 5 jours de retard. Quelle réponse est la plus adaptée ?",
+    "reponses": [
+      "Nier le retard",
+      "S'excuser, expliquer brièvement la cause et proposer un geste commercial adapté",
+      "Lui dire que c'est la faute du client",
+      "Ne pas répondre à sa demande"
+    ],
+    "bonneReponse": 1,
+    "explication": "S'excuser et proposer une compensation montre qu'on prend en compte son préjudice."
+  },
+  {
+    "id": "b2-033",
+    "theme": "bloc2",
+    "difficulte": 2,
+    "question": "Parmi ces moyens de paiement, lequel est immédiat et garanti pour le commerçant ?",
+    "reponses": [
+      "Le chèque sans vérification",
+      "Le paiement différé sur parole",
+      "La promesse de payer demain",
+      "La carte bancaire avec code confidentiel"
+    ],
+    "bonneReponse": 3,
+    "explication": "La validation par code confidentiel assure l'autorisation de paiement par la banque."
+  },
+  {
+    "id": "b3-001",
+    "theme": "bloc3",
+    "difficulte": 1,
+    "question": "Fidéliser un client, c'est…",
+    "reponses": [
+      "Lui vendre une seule fois",
+      "Le faire changer de magasin",
+      "Lui faire peur",
+      "L'amener à racheter régulièrement chez nous"
+    ],
+    "bonneReponse": 3,
+    "explication": "La fidélisation vise des achats répétés dans la durée."
+  },
+  {
+    "id": "b3-002",
+    "theme": "bloc3",
+    "difficulte": 1,
+    "question": "Pourquoi fidéliser un client coûte-t-il généralement moins cher que d'en conquérir un nouveau ?",
+    "reponses": [
+      "Parce qu'il connaît déjà l'entreprise et achète plus facilement",
+      "Parce qu'il ne paie jamais",
+      "Parce que la concurrence disparaît",
+      "Parce qu'il n'a plus de besoins"
+    ],
+    "bonneReponse": 0,
+    "explication": "Conquérir un nouveau client demande plus d'efforts commerciaux et de publicité."
+  },
+  {
+    "id": "b3-003",
+    "theme": "bloc3",
+    "difficulte": 1,
+    "question": "Laquelle de ces actions est un outil de fidélisation ?",
+    "reponses": [
+      "La carte de fidélité",
+      "La mise en rayon",
+      "Le bon de livraison",
+      "Le devis"
+    ],
+    "bonneReponse": 0,
+    "explication": "La carte de fidélité récompense les achats répétés (points, remises, avantages)."
+  },
+  {
+    "id": "b3-004",
+    "theme": "bloc3",
+    "difficulte": 2,
+    "question": "Un client reçoit un code de réduction pour son anniversaire. C'est…",
+    "reponses": [
+      "Une réclamation",
+      "Une offre personnalisée de fidélisation",
+      "Une vente additionnelle",
+      "Une opération de déstockage"
+    ],
+    "bonneReponse": 1,
+    "explication": "Une attention adaptée au client renforce son attachement à l'enseigne."
+  },
+  {
+    "id": "b3-005",
+    "theme": "bloc3",
+    "difficulte": 2,
+    "question": "Le parrainage consiste à…",
+    "reponses": [
+      "Offrir un cadeau aux concurrents",
+      "Baisser le prix pour tous",
+      "Fermer le magasin",
+      "Récompenser un client qui recommande l'enseigne à une personne de son entourage"
+    ],
+    "bonneReponse": 3,
+    "explication": "Le parrainage permet de recruter de nouveaux clients grâce à la recommandation et de fidéliser le parrain."
+  },
+  {
+    "id": "b3-006",
+    "theme": "bloc3",
+    "difficulte": 2,
+    "question": "Que signifie CRM ?",
+    "reponses": [
+      "Commercial Rapid Marketing",
+      "Client Remise Mensuelle",
+      "Customer Relationship Management (gestion de la relation client)",
+      "Contrôle des Ruptures de Marchandises"
+    ],
+    "bonneReponse": 2,
+    "explication": "Un CRM est un outil et une démarche qui centralise les données sur les clients."
+  },
+  {
+    "id": "b3-007",
+    "theme": "bloc3",
+    "difficulte": 2,
+    "question": "À quoi sert un logiciel de CRM ?",
+    "reponses": [
+      "Calculer la TVA uniquement",
+      "Gérer les plannings des vendeurs",
+      "Centraliser les informations clients (achats, contacts, préférences) pour mieux les suivre",
+      "Imprimer les étiquettes de prix"
+    ],
+    "bonneReponse": 2,
+    "explication": "Il permet de connaître le client, d'historiser les échanges et de personnaliser les offres."
+  },
+  {
+    "id": "b3-008",
+    "theme": "bloc3",
+    "difficulte": 2,
+    "question": "Quelles données figurent typiquement dans une base clients ?",
+    "reponses": [
+      "Coordonnées, historique d'achats, centres d'intérêt",
+      "Le mot de passe bancaire du client",
+      "Les opinions politiques du client",
+      "Le dossier médical du client"
+    ],
+    "bonneReponse": 0,
+    "explication": "On collecte uniquement les données utiles à la relation commerciale, dans le respect du RGPD."
+  },
+  {
+    "id": "b3-009",
+    "theme": "bloc3",
+    "difficulte": 2,
+    "question": "Segmenter la clientèle, c'est…",
+    "reponses": [
+      "La supprimer de la base",
+      "La diviser en groupes aux caractéristiques ou comportements proches",
+      "L'augmenter artificiellement",
+      "La limiter à un seul client"
+    ],
+    "bonneReponse": 1,
+    "explication": "La segmentation permet d'adresser des offres adaptées à chaque groupe."
+  },
+  {
+    "id": "b3-010",
+    "theme": "bloc3",
+    "difficulte": 3,
+    "question": "Quel client est prioritaire dans une démarche de fidélisation ciblée ?",
+    "reponses": [
+      "Le client qui n'a jamais acheté",
+      "Le concurrent",
+      "Le client qui a quitté la région",
+      "Le client qui achète souvent et dépense beaucoup"
+    ],
+    "bonneReponse": 3,
+    "explication": "Les meilleurs clients rapportent le plus : on cherche à les conserver en priorité."
+  },
+  {
+    "id": "b3-011",
+    "theme": "bloc3",
+    "difficulte": 1,
+    "question": "Pourquoi mesurer la satisfaction client ?",
+    "reponses": [
+      "Pour punir les clients mécontents",
+      "Pour augmenter les prix",
+      "Pour supprimer le SAV",
+      "Pour identifier les points forts et les axes d'amélioration"
+    ],
+    "bonneReponse": 3,
+    "explication": "Les mesures de satisfaction aident à corriger les problèmes avant qu'ils fassent perdre des clients."
+  },
+  {
+    "id": "b3-012",
+    "theme": "bloc3",
+    "difficulte": 2,
+    "question": "Laquelle de ces méthodes permet de mesurer la satisfaction ?",
+    "reponses": [
+      "Un inventaire",
+      "Un questionnaire envoyé après l'achat",
+      "Un bon de commande",
+      "Un bon de livraison"
+    ],
+    "bonneReponse": 1,
+    "explication": "Les enquêtes, avis en ligne et questionnaires recueillent le ressenti des clients."
+  },
+  {
+    "id": "b3-013",
+    "theme": "bloc3",
+    "difficulte": 2,
+    "question": "Dans une enquête de satisfaction, une question « Sur une échelle de 0 à 10, recommanderiez-vous notre magasin ? » sert à calculer…",
+    "reponses": [
+      "Le taux de TVA",
+      "Le seuil de rentabilité",
+      "L'indice de vente",
+      "Le Net Promoter Score (NPS)"
+    ],
+    "bonneReponse": 3,
+    "explication": "Le NPS mesure la propension à recommander : promoteurs moins détracteurs."
+  },
+  {
+    "id": "b3-014",
+    "theme": "bloc3",
+    "difficulte": 3,
+    "question": "Le Net Promoter Score est égal à…",
+    "reponses": [
+      "% de promoteurs + % de détracteurs",
+      "% de neutres − % de promoteurs",
+      "% de promoteurs − % de détracteurs",
+      "Nombre d'enquêtes ÷ clients"
+    ],
+    "bonneReponse": 2,
+    "explication": "Un NPS positif signifie qu'il y a plus de clients qui recommandent que de clients critiques."
+  },
+  {
+    "id": "b3-015",
+    "theme": "bloc3",
+    "difficulte": 2,
+    "question": "Un client satisfait est automatiquement un client fidèle.",
+    "reponses": [
+      "Vrai : toujours",
+      "Vrai pour tous les produits",
+      "Faux : la satisfaction ne garantit pas la fidélité",
+      "Vrai si le prix est bas"
+    ],
+    "bonneReponse": 2,
+    "explication": "Un client satisfait peut aller chez un concurrent plus attractif ; la fidélité demande un lien durable."
+  },
+  {
+    "id": "b3-016",
+    "theme": "bloc3",
+    "difficulte": 3,
+    "question": "Le taux d'attrition (churn) mesure…",
+    "reponses": [
+      "La proportion de nouveaux clients",
+      "Le montant du panier moyen",
+      "Le nombre d'articles vendus",
+      "La proportion de clients perdus sur une période"
+    ],
+    "bonneReponse": 3,
+    "explication": "C'est l'inverse du taux de fidélisation : plus il est faible, mieux c'est."
+  },
+  {
+    "id": "b3-017",
+    "theme": "bloc3",
+    "difficulte": 3,
+    "question": "Une enseigne avait 500 clients au début de l'année, 400 sont encore clients à la fin. Quel est le taux de fidélisation ?",
+    "reponses": [
+      "20 %",
+      "125 %",
+      "80 %",
+      "50 %"
+    ],
+    "bonneReponse": 2,
+    "explication": "400 ÷ 500 × 100 = 80 %."
+  },
+  {
+    "id": "b3-018",
+    "theme": "bloc3",
+    "difficulte": 3,
+    "question": "Une enseigne avait 500 clients, 400 sont restés. Quel est le taux d'attrition ?",
+    "reponses": [
+      "80 %",
+      "25 %",
+      "10 %",
+      "20 %"
+    ],
+    "bonneReponse": 3,
+    "explication": "100 clients perdus ÷ 500 × 100 = 20 %."
+  },
+  {
+    "id": "b3-019",
+    "theme": "bloc3",
+    "difficulte": 1,
+    "question": "Quel est le rôle d'un community manager ?",
+    "reponses": [
+      "Gérer la comptabilité",
+      "Animer et modérer les communautés de l'entreprise sur les réseaux sociaux",
+      "Livrer les colis",
+      "Remplacer le vendeur en magasin"
+    ],
+    "bonneReponse": 1,
+    "explication": "Il crée du contenu, répond aux internautes et fédère une communauté autour de la marque."
+  },
+  {
+    "id": "b3-020",
+    "theme": "bloc3",
+    "difficulte": 2,
+    "question": "Quel est l'intérêt de poster régulièrement sur Instagram pour un commerçant ?",
+    "reponses": [
+      "Faire baisser les ventes",
+      "Éviter toute interaction",
+      "Cacher ses prix",
+      "Rester visible, créer du lien et attirer de nouveaux clients"
+    ],
+    "bonneReponse": 3,
+    "explication": "Les réseaux sociaux entretiennent la relation avec les clients et prospects."
+  },
+  {
+    "id": "b3-021",
+    "theme": "bloc3",
+    "difficulte": 1,
+    "question": "L'e-réputation d'une entreprise correspond à…",
+    "reponses": [
+      "Le nombre de magasins",
+      "Sa trésorerie",
+      "Son stock de marchandises",
+      "Son image sur Internet (avis, commentaires, mentions)"
+    ],
+    "bonneReponse": 3,
+    "explication": "Elle se construit à travers ce que disent les internautes et ce que publie l'entreprise."
+  },
+  {
+    "id": "b3-022",
+    "theme": "bloc3",
+    "difficulte": 2,
+    "question": "Un client laisse un avis négatif sur Google. Quelle est la meilleure réponse de l'entreprise ?",
+    "reponses": [
+      "Répondre rapidement, poliment, proposer une solution",
+      "Supprimer l'avis en insultant le client",
+      "Ignorer l'avis",
+      "Publier de faux avis positifs"
+    ],
+    "bonneReponse": 0,
+    "explication": "Une réponse courtoise montre le sérieux de l'entreprise aux autres internautes."
+  },
+  {
+    "id": "b3-023",
+    "theme": "bloc3",
+    "difficulte": 3,
+    "question": "Rédiger de faux avis positifs pour améliorer son image est…",
+    "reponses": [
+      "Une technique d'e-réputation autorisée",
+      "Une obligation légale",
+      "Une pratique trompeuse sanctionnée par la loi",
+      "Un outil de CRM"
+    ],
+    "bonneReponse": 2,
+    "explication": "Les faux avis constituent une pratique commerciale trompeuse, passible de sanctions."
+  },
+  {
+    "id": "b3-024",
+    "theme": "bloc3",
+    "difficulte": 2,
+    "question": "En quoi consiste la veille d'e-réputation ?",
+    "reponses": [
+      "Surveiller les stocks",
+      "Surveiller les caisses",
+      "Surveiller ce qui se dit sur l'entreprise en ligne",
+      "Surveiller les horaires des salariés"
+    ],
+    "bonneReponse": 2,
+    "explication": "Alertes, recherches et outils permettent de réagir vite aux avis et commentaires."
+  },
+  {
+    "id": "b3-025",
+    "theme": "bloc3",
+    "difficulte": 2,
+    "question": "Quel outil permet de fidéliser en envoyant régulièrement des informations et offres aux clients inscrits ?",
+    "reponses": [
+      "La newsletter",
+      "Le bon de livraison",
+      "Le registre du personnel",
+      "L'étiquette de prix"
+    ],
+    "bonneReponse": 0,
+    "explication": "La newsletter maintient le contact à moindre coût, à condition d'avoir le consentement des destinataires."
+  },
+  {
+    "id": "b3-026",
+    "theme": "bloc3",
+    "difficulte": 2,
+    "question": "Une vente privée réservée aux détenteurs de la carte de fidélité est…",
+    "reponses": [
+      "Une opération de soldes",
+      "Un déstockage",
+      "Un avantage exclusif qui valorise le client fidèle",
+      "Une vente forcée"
+    ],
+    "bonneReponse": 2,
+    "explication": "Les avantages exclusifs récompensent les clients et donnent envie d'adhérer au programme."
+  },
+  {
+    "id": "b3-027",
+    "theme": "bloc3",
+    "difficulte": 3,
+    "question": "Quelle donnée permet de savoir si les clients reviennent ?",
+    "reponses": [
+      "Le taux de TVA",
+      "Le coefficient multiplicateur",
+      "Le linéaire développé",
+      "Le taux de réachat"
+    ],
+    "bonneReponse": 3,
+    "explication": "Le taux de réachat mesure la part des clients qui achètent à nouveau sur une période."
+  },
+  {
+    "id": "b3-028",
+    "theme": "bloc3",
+    "difficulte": 2,
+    "question": "Un client a un problème, tu le recontactes une semaine après pour savoir si tout est réglé. C'est…",
+    "reponses": [
+      "Un suivi client qui renforce la relation",
+      "Du harcèlement commercial systématique",
+      "Une erreur de procédure",
+      "Une vente forcée"
+    ],
+    "bonneReponse": 0,
+    "explication": "Ce type de suivi montre qu'on se préoccupe du client et fidélise."
+  },
+  {
+    "id": "b3-029",
+    "theme": "bloc3",
+    "difficulte": 3,
+    "question": "Dans un CRM, que permet l'historique des échanges ?",
+    "reponses": [
+      "Fixer le prix de vente",
+      "Offrir un suivi personnalisé à chaque contact",
+      "Calculer la marge brute",
+      "Recruter du personnel"
+    ],
+    "bonneReponse": 1,
+    "explication": "Chaque collaborateur sait ce qui a été dit ou vendu et personnalise sa relation."
+  },
+  {
+    "id": "b3-030",
+    "theme": "bloc3",
+    "difficulte": 2,
+    "question": "Quelle attitude du vendeur favorise la fidélisation ?",
+    "reponses": [
+      "Traiter tous les clients de façon identique et pressée",
+      "Ne jamais rappeler un client",
+      "Éviter le SAV",
+      "Se souvenir du client et personnaliser le conseil"
+    ],
+    "bonneReponse": 3,
+    "explication": "La personnalisation donne au client le sentiment d'être reconnu."
+  },
+  {
+    "id": "b3-031",
+    "theme": "bloc3",
+    "difficulte": 3,
+    "question": "Lequel est un exemple d'avantage « non monétaire » dans un programme de fidélité ?",
+    "reponses": [
+      "Réduction de 10 %",
+      "Cagnotte remboursable",
+      "Accès prioritaire à de nouveaux produits",
+      "Bon d'achat de 20 €"
+    ],
+    "bonneReponse": 2,
+    "explication": "Les avantages non monétaires (accès exclusif, service, invitation) créent de l'attachement sans baisse de prix."
+  },
+  {
+    "id": "pr-001",
+    "theme": "prospection",
+    "difficulte": 1,
+    "question": "Qu'est-ce qu'un prospect ?",
+    "reponses": [
+      "Un client fidèle depuis dix ans",
+      "Une personne ou entreprise susceptible de devenir cliente",
+      "Un concurrent",
+      "Un fournisseur"
+    ],
+    "bonneReponse": 1,
+    "explication": "Le prospect n'a pas encore acheté mais présente un besoin et un potentiel d'achat."
+  },
+  {
+    "id": "pr-002",
+    "theme": "prospection",
+    "difficulte": 1,
+    "question": "À quoi sert la prospection commerciale ?",
+    "reponses": [
+      "Conquérir de nouveaux clients",
+      "Fidéliser uniquement les clients actuels",
+      "Vérifier les stocks",
+      "Gérer les réclamations"
+    ],
+    "bonneReponse": 0,
+    "explication": "La prospection cherche à gagner de nouveaux clients pour développer le chiffre d'affaires."
+  },
+  {
+    "id": "pr-003",
+    "theme": "prospection",
+    "difficulte": 2,
+    "question": "Quelle est la différence entre un suspect et un prospect ?",
+    "reponses": [
+      "Le suspect est un client, le prospect est un concurrent",
+      "Le suspect est une cible potentielle non encore qualifiée, le prospect a un besoin repéré",
+      "Il n'y en a aucune",
+      "Le suspect a déjà acheté deux fois"
+    ],
+    "bonneReponse": 1,
+    "explication": "On passe de suspect à prospect une fois le besoin et l'intérêt vérifiés."
+  },
+  {
+    "id": "pr-004",
+    "theme": "prospection",
+    "difficulte": 2,
+    "question": "Cibler une clientèle B2C, c'est utiliser des critères comme…",
+    "reponses": [
+      "Le chiffre d'affaires et le nombre de salariés",
+      "Le code NAF de l'entreprise",
+      "Le capital social",
+      "L'âge, la profession, le lieu d'habitation, le revenu"
+    ],
+    "bonneReponse": 3,
+    "explication": "Ce sont des critères de particuliers ; en B2B on utilise des critères d'entreprises."
+  },
+  {
+    "id": "pr-005",
+    "theme": "prospection",
+    "difficulte": 2,
+    "question": "Cibler une clientèle B2B, c'est utiliser des critères comme…",
+    "reponses": [
+      "L'âge et la situation familiale",
+      "Le secteur d'activité, la taille, le chiffre d'affaires, la localisation",
+      "Le niveau d'études",
+      "Les loisirs"
+    ],
+    "bonneReponse": 1,
+    "explication": "Une entreprise se qualifie par ses caractéristiques économiques."
+  },
+  {
+    "id": "pr-006",
+    "theme": "prospection",
+    "difficulte": 2,
+    "question": "Que signifie le sigle B2B ?",
+    "reponses": [
+      "Back to Basics",
+      "Brand to Buyer",
+      "Buy to Bank",
+      "Business to Business (vente entre entreprises)"
+    ],
+    "bonneReponse": 3,
+    "explication": "B2B désigne les ventes réalisées d'une entreprise à une autre entreprise."
+  },
+  {
+    "id": "pr-007",
+    "theme": "prospection",
+    "difficulte": 2,
+    "question": "Laquelle de ces sources fournit un fichier de prospects externe ?",
+    "reponses": [
+      "La liste des clients actuels",
+      "Les ventes de la journée",
+      "Un annuaire professionnel, un salon, une base d'entreprises (Sirene)",
+      "Le registre du personnel"
+    ],
+    "bonneReponse": 2,
+    "explication": "Les sources externes viennent de l'extérieur de l'entreprise ; les clients inactifs, eux, sont une source interne."
+  },
+  {
+    "id": "pr-008",
+    "theme": "prospection",
+    "difficulte": 2,
+    "question": "Laquelle de ces sources est interne à l'entreprise ?",
+    "reponses": [
+      "Les demandes de devis restées sans suite",
+      "Un annuaire en ligne",
+      "Un fichier loué à une société spécialisée",
+      "Une liste achetée"
+    ],
+    "bonneReponse": 0,
+    "explication": "Les anciens contacts et devis sont déjà dans la base de l'entreprise."
+  },
+  {
+    "id": "pr-009",
+    "theme": "prospection",
+    "difficulte": 3,
+    "question": "Que signifie « qualifier » un fichier de prospects ?",
+    "reponses": [
+      "Supprimer tous les contacts",
+      "Doubler la taille du fichier",
+      "Vérifier et enrichir les données pour ne garder que les contacts pertinents",
+      "Les envoyer à la concurrence"
+    ],
+    "bonneReponse": 2,
+    "explication": "Qualifier, c'est contrôler les coordonnées, le potentiel et le besoin de chaque contact."
+  },
+  {
+    "id": "pr-010",
+    "theme": "prospection",
+    "difficulte": 2,
+    "question": "Un plan de prospection comprend notamment…",
+    "reponses": [
+      "Seulement le prix des produits",
+      "Uniquement le planning des congés",
+      "Les menus de la cantine",
+      "Les objectifs, les cibles, les moyens, le calendrier et le budget"
+    ],
+    "bonneReponse": 3,
+    "explication": "Il organise l'action de prospection de façon planifiée et mesurable."
+  },
+  {
+    "id": "pr-011",
+    "theme": "prospection",
+    "difficulte": 2,
+    "question": "Parmi ces actions, laquelle est un outil de prospection à distance ?",
+    "reponses": [
+      "La mise en rayon",
+      "L'inventaire",
+      "Le phoning (téléphone)",
+      "Le bon de livraison"
+    ],
+    "bonneReponse": 2,
+    "explication": "Phoning, e-mailing et courrier permettent de joindre de nombreux prospects sans se déplacer."
+  },
+  {
+    "id": "pr-012",
+    "theme": "prospection",
+    "difficulte": 1,
+    "question": "Quel est l'objectif principal d'un appel de prise de rendez-vous ?",
+    "reponses": [
+      "Obtenir un rendez-vous",
+      "Conclure la vente par téléphone",
+      "Faire une enquête de satisfaction",
+      "Réaliser une réclamation"
+    ],
+    "bonneReponse": 0,
+    "explication": "On ne cherche pas à tout vendre au téléphone mais à décrocher un entretien."
+  },
+  {
+    "id": "pr-013",
+    "theme": "prospection",
+    "difficulte": 2,
+    "question": "Que fait-on au début d'un appel de prospection ?",
+    "reponses": [
+      "Raccrocher aussitôt",
+      "Annoncer le prix directement",
+      "Demander au prospect de rappeler",
+      "Se présenter et donner l'objet de l'appel (accroche)"
+    ],
+    "bonneReponse": 3,
+    "explication": "Il faut capter l'attention en quelques secondes avec une présentation claire et une accroche."
+  },
+  {
+    "id": "pr-014",
+    "theme": "prospection",
+    "difficulte": 2,
+    "question": "La secrétaire répond : « Monsieur Durand n'est pas disponible, c'est à quel sujet ? ». Que fais-tu ?",
+    "reponses": [
+      "Je raccroche",
+      "Je reste courtois, je donne l'objet de mon appel avec un bénéfice pour l'entreprise et je demande quand le joindre",
+      "Je mens en disant que c'est personnel",
+      "Je m'énerve"
+    ],
+    "bonneReponse": 1,
+    "explication": "Une attitude respectueuse et une raison d'appeler concrète aident à franchir le barrage."
+  },
+  {
+    "id": "pr-015",
+    "theme": "prospection",
+    "difficulte": 3,
+    "question": "Quelle technique aide à franchir le barrage de la secrétaire ?",
+    "reponses": [
+      "Connaître le nom du décideur et le demander directement avec assurance",
+      "Appeler à l'heure du déjeuner en espérant tomber sur un répondeur",
+      "Mentir sur son identité",
+      "Rappeler 10 fois de suite"
+    ],
+    "bonneReponse": 0,
+    "explication": "Citer le nom et la fonction du décideur montre qu'on est légitime sans tromper personne."
+  },
+  {
+    "id": "pr-016",
+    "theme": "prospection",
+    "difficulte": 2,
+    "question": "Pour conclure un appel de prise de rendez-vous, il est efficace de…",
+    "reponses": [
+      "Demander « Quand êtes-vous libre ? » sans proposition",
+      "Dire « Vous me rappellerez »",
+      "Proposer deux dates au choix",
+      "Ne rien proposer"
+    ],
+    "bonneReponse": 2,
+    "explication": "L'alternative (« mardi à 10 h ou jeudi à 15 h ? ») facilite la décision."
+  },
+  {
+    "id": "pr-017",
+    "theme": "prospection",
+    "difficulte": 2,
+    "question": "Après avoir obtenu un RDV par téléphone, que faut-il faire ?",
+    "reponses": [
+      "L'oublier jusqu'au jour J",
+      "Le décaler plusieurs fois",
+      "Le transmettre au concurrent",
+      "Le confirmer par écrit (e-mail) et le noter dans l'agenda"
+    ],
+    "bonneReponse": 3,
+    "explication": "La confirmation écrite réduit les oublis et renforce le sérieux."
+  },
+  {
+    "id": "pr-018",
+    "theme": "prospection",
+    "difficulte": 3,
+    "question": "À quels horaires le démarchage téléphonique auprès de consommateurs est-il autorisé ?",
+    "reponses": [
+      "Tous les jours à toute heure",
+      "Uniquement le samedi",
+      "Du lundi au dimanche de 8 h à 22 h",
+      "Du lundi au vendredi, de 10 h à 13 h et de 14 h à 20 h"
+    ],
+    "bonneReponse": 3,
+    "explication": "Cette règle encadre les appels de prospection vers les particuliers."
+  },
+  {
+    "id": "pr-019",
+    "theme": "prospection",
+    "difficulte": 2,
+    "question": "Que permet la liste Bloctel ?",
+    "reponses": [
+      "Aux consommateurs de s'opposer au démarchage téléphonique",
+      "De bloquer les mails professionnels",
+      "D'acheter des fichiers de prospects",
+      "De vérifier un chèque"
+    ],
+    "bonneReponse": 0,
+    "explication": "Un consommateur inscrit sur Bloctel ne doit pas être appelé à des fins de prospection."
+  },
+  {
+    "id": "pr-020",
+    "theme": "prospection",
+    "difficulte": 2,
+    "question": "Que mesure le taux d'ouverture d'un e-mailing ?",
+    "reponses": [
+      "Part des clients mécontents",
+      "Le chiffre d'affaires généré",
+      "Part des e-mails ouverts parmi ceux délivrés",
+      "Le nombre de désabonnements"
+    ],
+    "bonneReponse": 2,
+    "explication": "Il montre l'efficacité de l'objet du message."
+  },
+  {
+    "id": "pr-021",
+    "theme": "prospection",
+    "difficulte": 2,
+    "question": "Sur 2 000 e-mails délivrés, 500 ont été ouverts. Quel est le taux d'ouverture ?",
+    "reponses": [
+      "25 %",
+      "40 %",
+      "4 %",
+      "50 %"
+    ],
+    "bonneReponse": 0,
+    "explication": "500 ÷ 2 000 × 100 = 25 %."
+  },
+  {
+    "id": "pr-022",
+    "theme": "prospection",
+    "difficulte": 3,
+    "question": "Sur 500 e-mails ouverts, 50 destinataires ont cliqué sur le lien. Quel est le taux de clic (par rapport aux e-mails ouverts) ?",
+    "reponses": [
+      "1 %",
+      "10 %",
+      "50 %",
+      "5 %"
+    ],
+    "bonneReponse": 1,
+    "explication": "50 ÷ 500 × 100 = 10 %."
+  },
+  {
+    "id": "pr-023",
+    "theme": "prospection",
+    "difficulte": 2,
+    "question": "Que doit obligatoirement contenir un e-mailing commercial ?",
+    "reponses": [
+      "Un lien de désinscription simple",
+      "Le salaire du commercial",
+      "Le prix d'achat des produits",
+      "Un contrat de vente signé"
+    ],
+    "bonneReponse": 0,
+    "explication": "Le destinataire doit pouvoir s'opposer facilement aux futurs envois."
+  },
+  {
+    "id": "pr-024",
+    "theme": "prospection",
+    "difficulte": 3,
+    "question": "Dans le cadre du B2C, l'envoi d'un e-mailing de prospection nécessite généralement…",
+    "reponses": [
+      "Aucune autorisation",
+      "Une autorisation du ministre",
+      "Le consentement préalable du destinataire (opt-in)",
+      "Un paiement du destinataire"
+    ],
+    "bonneReponse": 2,
+    "explication": "Pour les particuliers, on doit avoir recueilli un accord explicite avant l'envoi."
+  },
+  {
+    "id": "pr-025",
+    "theme": "prospection",
+    "difficulte": 1,
+    "question": "Qu'est-ce qu'un « objet » d'e-mail efficace ?",
+    "reponses": [
+      "Très long et technique",
+      "Vide",
+      "Entièrement en majuscules avec des points d'exclamation",
+      "Court, clair et donnant envie d'ouvrir"
+    ],
+    "bonneReponse": 3,
+    "explication": "L'objet est la première chose que le prospect lit : il doit attirer sans tromper."
+  },
+  {
+    "id": "pr-026",
+    "theme": "prospection",
+    "difficulte": 2,
+    "question": "Quel avantage principal présente un salon professionnel pour la prospection ?",
+    "reponses": [
+      "Éviter tout contact avec les clients",
+      "Réduire la gamme de produits",
+      "Supprimer le besoin de relance",
+      "Rencontrer beaucoup de prospects qualifiés en peu de temps"
+    ],
+    "bonneReponse": 3,
+    "explication": "Les visiteurs viennent pour s'informer : le contact est facilité et ciblé."
+  },
+  {
+    "id": "pr-027",
+    "theme": "prospection",
+    "difficulte": 2,
+    "question": "Après un salon, que faut-il faire des contacts recueillis ?",
+    "reponses": [
+      "Les ranger au fond d'un tiroir",
+      "Les relancer rapidement et les saisir dans le fichier",
+      "Les jeter",
+      "Attendre un an"
+    ],
+    "bonneReponse": 1,
+    "explication": "Une relance rapide capitalise sur l'intérêt exprimé sur le stand."
+  },
+  {
+    "id": "pr-028",
+    "theme": "prospection",
+    "difficulte": 3,
+    "question": "Le taux de réussite d'une campagne de prise de RDV est, ici, égal au nombre de RDV obtenus ÷ nombre de prospects joints × 100. 60 prospects joints, 12 RDV obtenus : quel taux ?",
+    "reponses": [
+      "12 %",
+      "20 %",
+      "5 %",
+      "50 %"
+    ],
+    "bonneReponse": 1,
+    "explication": "12 ÷ 60 × 100 = 20 %."
+  },
+  {
+    "id": "pr-029",
+    "theme": "prospection",
+    "difficulte": 3,
+    "question": "Sur 80 prospects visités, 8 sont devenus clients. Quel est le taux de transformation ?",
+    "reponses": [
+      "8 %",
+      "1 %",
+      "90 %",
+      "10 %"
+    ],
+    "bonneReponse": 3,
+    "explication": "8 ÷ 80 × 100 = 10 %."
+  },
+  {
+    "id": "pr-030",
+    "theme": "prospection",
+    "difficulte": 3,
+    "question": "Une campagne de prospection coûte 1 500 € et a permis d'acquérir 30 nouveaux clients. Quel est le coût d'acquisition par client ?",
+    "reponses": [
+      "45 €",
+      "500 €",
+      "30 €",
+      "50 €"
+    ],
+    "bonneReponse": 3,
+    "explication": "1 500 ÷ 30 = 50 €."
+  },
+  {
+    "id": "pr-031",
+    "theme": "prospection",
+    "difficulte": 1,
+    "question": "Que signifie RGPD ?",
+    "reponses": [
+      "Règlement Général sur la Protection des Données",
+      "Registre Général des Prix et Documents",
+      "Réseau Global de Prospection Digitale",
+      "Règle Générale de Promotion et Distribution"
+    ],
+    "bonneReponse": 0,
+    "explication": "Ce règlement européen encadre la collecte et l'usage des données personnelles."
+  },
+  {
+    "id": "pr-032",
+    "theme": "prospection",
+    "difficulte": 2,
+    "question": "Quel organisme veille en France au respect du RGPD ?",
+    "reponses": [
+      "La DGCCRF",
+      "L'INSEE",
+      "La CNIL",
+      "La Banque de France"
+    ],
+    "bonneReponse": 2,
+    "explication": "La CNIL (Commission nationale de l'informatique et des libertés) contrôle et sanctionne."
+  },
+  {
+    "id": "pr-033",
+    "theme": "prospection",
+    "difficulte": 2,
+    "question": "Un prospect demande que ses données soient supprimées de ton fichier. Que fais-tu ?",
+    "reponses": [
+      "Je refuse car c'est mon fichier",
+      "Je les revends",
+      "Je les supprime : il exerce son droit à l'effacement",
+      "Je lui demande de payer"
+    ],
+    "bonneReponse": 2,
+    "explication": "Le droit à l'effacement (droit à l'oubli) doit être respecté dans les meilleurs délais."
+  },
+  {
+    "id": "pr-034",
+    "theme": "prospection",
+    "difficulte": 3,
+    "question": "Que signifie le principe de « minimisation » des données du RGPD ?",
+    "reponses": [
+      "Collecter le maximum d'informations possibles",
+      "Ne collecter que les données strictement nécessaires à l'objectif",
+      "Garder les données éternellement",
+      "Partager les données avec tous les partenaires"
+    ],
+    "bonneReponse": 1,
+    "explication": "On ne demande que ce qui est utile à la finalité annoncée."
+  },
+  {
+    "id": "pr-035",
+    "theme": "prospection",
+    "difficulte": 3,
+    "question": "Combien de temps peut-on, en principe, conserver les données d'un prospect sans nouveau contact de sa part ?",
+    "reponses": [
+      "Toute la vie",
+      "3 ans à compter du dernier contact",
+      "1 semaine",
+      "10 ans"
+    ],
+    "bonneReponse": 1,
+    "explication": "La CNIL recommande une durée de 3 ans après le dernier contact émanant du prospect."
+  },
+  {
+    "id": "pr-036",
+    "theme": "prospection",
+    "difficulte": 3,
+    "question": "Laquelle de ces pratiques est conforme au RGPD ?",
+    "reponses": [
+      "Une case déjà cochée par défaut",
+      "Un consentement caché dans les conditions générales",
+      "Un fichier acheté sans vérification de l'origine",
+      "Une case de consentement non pré-cochée avec information claire"
+    ],
+    "bonneReponse": 3,
+    "explication": "Le consentement doit être libre, éclairé, spécifique et se traduire par une action positive."
+  },
+  {
+    "id": "va-001",
+    "theme": "valorisation",
+    "difficulte": 1,
+    "question": "Que désigne le marchandisage (merchandising) ?",
+    "reponses": [
+      "La livraison des marchandises",
+      "La fabrication des produits",
+      "La gestion de la paie",
+      "L'ensemble des techniques de présentation des produits en magasin pour stimuler les ventes"
+    ],
+    "bonneReponse": 3,
+    "explication": "Le marchandisage organise l'offre dans le point de vente pour la rendre attractive et rentable."
+  },
+  {
+    "id": "va-002",
+    "theme": "valorisation",
+    "difficulte": 1,
+    "question": "Quel est le rôle d'une vitrine ?",
+    "reponses": [
+      "Stocker les produits",
+      "Encaisser les clients",
+      "Attirer l'attention, informer et donner envie d'entrer",
+      "Remplacer l'étiquetage"
+    ],
+    "bonneReponse": 2,
+    "explication": "La vitrine est le premier contact avec l'enseigne : elle capte l'attention des passants."
+  },
+  {
+    "id": "va-003",
+    "theme": "valorisation",
+    "difficulte": 2,
+    "question": "Quelle est une bonne pratique pour une vitrine ?",
+    "reponses": [
+      "La laisser identique pendant des années",
+      "La renouveler régulièrement et la garder propre et éclairée",
+      "La remplir au maximum de produits sans ordre",
+      "L'éteindre la nuit sans raison"
+    ],
+    "bonneReponse": 1,
+    "explication": "Une vitrine soignée et renouvelée donne une image dynamique du magasin."
+  },
+  {
+    "id": "va-004",
+    "theme": "valorisation",
+    "difficulte": 2,
+    "question": "Que signifie PLV ?",
+    "reponses": [
+      "Prix Local de Vente",
+      "Publicité sur le Lieu de Vente",
+      "Produit à Large Valeur",
+      "Plan de Livraison des Ventes"
+    ],
+    "bonneReponse": 1,
+    "explication": "La PLV regroupe les supports qui promeuvent un produit sur le lieu de vente (affiche, présentoir, stop-rayon)."
+  },
+  {
+    "id": "va-005",
+    "theme": "valorisation",
+    "difficulte": 2,
+    "question": "Que signifie ILV ?",
+    "reponses": [
+      "Inventaire des Livraisons",
+      "Information sur le Lieu de Vente",
+      "Indice de Lieu de Vente",
+      "Image Locale de Vente"
+    ],
+    "bonneReponse": 1,
+    "explication": "L'ILV informe le client (prix, origine, horaires, plan du magasin)."
+  },
+  {
+    "id": "va-006",
+    "theme": "valorisation",
+    "difficulte": 2,
+    "question": "Quel élément relève de l'ILV ?",
+    "reponses": [
+      "Un présentoir publicitaire de marque",
+      "L'affichage du prix et de l'origine d'un produit",
+      "Un stand de dégustation",
+      "Une animation de lancement"
+    ],
+    "bonneReponse": 1,
+    "explication": "L'ILV est informative ; la PLV est plus publicitaire."
+  },
+  {
+    "id": "va-007",
+    "theme": "valorisation",
+    "difficulte": 2,
+    "question": "Un stop-rayon (carton qui dépasse du rayon) est…",
+    "reponses": [
+      "Un moyen de paiement",
+      "Un support de PLV",
+      "Un bon de commande",
+      "Un document comptable"
+    ],
+    "bonneReponse": 1,
+    "explication": "Il attire l'œil sur un produit ou une promotion."
+  },
+  {
+    "id": "va-008",
+    "theme": "valorisation",
+    "difficulte": 1,
+    "question": "Qu'est-ce que le facing ?",
+    "reponses": [
+      "La largeur du magasin",
+      "Le nombre de caisses",
+      "La taille de la vitrine",
+      "Le nombre d'unités d'un même produit visibles en façade sur le linéaire"
+    ],
+    "bonneReponse": 3,
+    "explication": "Plus le facing est important, plus le produit est visible."
+  },
+  {
+    "id": "va-009",
+    "theme": "valorisation",
+    "difficulte": 2,
+    "question": "Qu'est-ce que le linéaire ?",
+    "reponses": [
+      "La longueur de la file d'attente",
+      "La longueur d'étagère utilisée pour présenter les produits",
+      "La distance entre deux magasins",
+      "Le nombre d'employés par rayon"
+    ],
+    "bonneReponse": 1,
+    "explication": "On mesure le linéaire développé (au sol) ou le linéaire en développé (cumul des étagères)."
+  },
+  {
+    "id": "va-010",
+    "theme": "valorisation",
+    "difficulte": 2,
+    "question": "Quel niveau de présentation est le plus favorable aux ventes ?",
+    "reponses": [
+      "Le niveau des yeux",
+      "Le niveau du sol",
+      "Le niveau du plafond",
+      "Le niveau de la réserve"
+    ],
+    "bonneReponse": 0,
+    "explication": "Les produits placés à hauteur des yeux sont vus et achetés plus facilement."
+  },
+  {
+    "id": "va-011",
+    "theme": "valorisation",
+    "difficulte": 2,
+    "question": "Qu'est-ce qu'une zone chaude dans un magasin ?",
+    "reponses": [
+      "Une zone mal éclairée",
+      "Une zone réservée au personnel",
+      "Une zone où le trafic de clients est important",
+      "Une zone chauffée en hiver"
+    ],
+    "bonneReponse": 2,
+    "explication": "Les zones chaudes (entrée, caisses) concentrent le passage des clients."
+  },
+  {
+    "id": "va-012",
+    "theme": "valorisation",
+    "difficulte": 2,
+    "question": "Qu'est-ce qu'une zone froide ?",
+    "reponses": [
+      "Le rayon surgelés uniquement",
+      "L'entrée du magasin",
+      "Une zone peu fréquentée par les clients",
+      "Le comptoir de caisse"
+    ],
+    "bonneReponse": 2,
+    "explication": "On peut la dynamiser avec une animation, un produit d'appel, un éclairage."
+  },
+  {
+    "id": "va-013",
+    "theme": "valorisation",
+    "difficulte": 2,
+    "question": "Pour dynamiser une zone froide, on peut…",
+    "reponses": [
+      "La laisser vide",
+      "Y placer un produit d'appel ou une animation",
+      "La fermer",
+      "Y mettre des produits défectueux"
+    ],
+    "bonneReponse": 1,
+    "explication": "Un produit attractif y attire des clients et fait circuler dans le magasin."
+  },
+  {
+    "id": "va-014",
+    "theme": "valorisation",
+    "difficulte": 2,
+    "question": "Qu'est-ce qu'un produit d'appel ?",
+    "reponses": [
+      "Un produit que personne ne veut",
+      "Un produit défectueux",
+      "Un produit réservé au personnel",
+      "Un produit vendu à bas prix pour attirer le client en magasin"
+    ],
+    "bonneReponse": 3,
+    "explication": "Il attire les clients qui achèteront aussi d'autres produits."
+  },
+  {
+    "id": "va-015",
+    "theme": "valorisation",
+    "difficulte": 3,
+    "question": "Qu'est-ce qu'une tête de gondole ?",
+    "reponses": [
+      "L'extrémité d'un rayon, emplacement très visible utilisé pour mettre en avant des produits",
+      "L'entrée du magasin",
+      "Le comptoir du directeur",
+      "Le plafond du rayon"
+    ],
+    "bonneReponse": 0,
+    "explication": "C'est un point chaud artificiel très utilisé pour les promotions."
+  },
+  {
+    "id": "va-016",
+    "theme": "valorisation",
+    "difficulte": 3,
+    "question": "Un point chaud « naturel » est…",
+    "reponses": [
+      "Un emplacement fréquenté par la structure même du magasin (caisses, entrée)",
+      "Un emplacement créé par une animation",
+      "Un rayon à 20 °C",
+      "Un rayon de produits chauds"
+    ],
+    "bonneReponse": 0,
+    "explication": "Il est lié à l'architecture du magasin ; le point chaud artificiel est créé par le commerçant."
+  },
+  {
+    "id": "va-017",
+    "theme": "valorisation",
+    "difficulte": 3,
+    "question": "Un point chaud artificiel est…",
+    "reponses": [
+      "Un endroit chauffé",
+      "Un rayon de plats chauds",
+      "Une zone rendue attractive par des animations, promotions ou mises en scène",
+      "Un emplacement lié à la structure du bâtiment"
+    ],
+    "bonneReponse": 2,
+    "explication": "On l'obtient par la mise en avant (tête de gondole, ilot promotionnel, démonstration)."
+  },
+  {
+    "id": "va-018",
+    "theme": "valorisation",
+    "difficulte": 2,
+    "question": "Dans la plupart des magasins français, le sens de circulation de la clientèle suit…",
+    "reponses": [
+      "Le sens des aiguilles d'une montre",
+      "Un sens aléatoire",
+      "Le sens inverse des aiguilles d'une montre",
+      "Un sens imposé par la loi"
+    ],
+    "bonneReponse": 2,
+    "explication": "La plupart des magasins sont organisés ainsi, car la majorité des clients se dirigent naturellement vers la droite."
+  },
+  {
+    "id": "va-019",
+    "theme": "valorisation",
+    "difficulte": 2,
+    "question": "Qu'est-ce que le balisage d'un magasin ?",
+    "reponses": [
+      "La mise en place de barrières",
+      "La fermeture du magasin",
+      "La signalétique (panneaux, repères) qui oriente le client dans les rayons",
+      "Le comptage des clients"
+    ],
+    "bonneReponse": 2,
+    "explication": "Le balisage aide le client à trouver ce qu'il cherche."
+  },
+  {
+    "id": "va-020",
+    "theme": "valorisation",
+    "difficulte": 2,
+    "question": "Qu'est-ce que l'implantation verticale ?",
+    "reponses": [
+      "Les produits sont rangés par couleur sur un seul niveau",
+      "Les produits d'une même famille sont placés du haut en bas du meuble",
+      "Les produits sont posés au sol",
+      "Les produits sont cachés en réserve"
+    ],
+    "bonneReponse": 1,
+    "explication": "Elle facilite la comparaison des produits d'une même famille sur plusieurs niveaux."
+  },
+  {
+    "id": "va-021",
+    "theme": "valorisation",
+    "difficulte": 2,
+    "question": "Qu'est-ce que l'implantation horizontale ?",
+    "reponses": [
+      "Les produits sont rangés du haut en bas",
+      "Les produits d'une même famille sont placés côte à côte sur un même niveau",
+      "Les produits sont cachés",
+      "Les produits sont rangés par ordre alphabétique inversé"
+    ],
+    "bonneReponse": 1,
+    "explication": "Elle permet de regrouper les produits sur un même niveau de présentation."
+  },
+  {
+    "id": "va-022",
+    "theme": "valorisation",
+    "difficulte": 3,
+    "question": "Dans un rayon, placer les produits les plus rentables au niveau des yeux est un principe…",
+    "reponses": [
+      "D'e-mailing",
+      "De comptabilité",
+      "De marchandisage lié à la rentabilité de l'espace",
+      "De droit du travail"
+    ],
+    "bonneReponse": 2,
+    "explication": "On optimise l'espace de vente pour vendre davantage ou dégager plus de marge."
+  },
+  {
+    "id": "va-023",
+    "theme": "valorisation",
+    "difficulte": 1,
+    "question": "Quel est l'objectif d'un événement commercial en magasin ?",
+    "reponses": [
+      "Fermer le magasin",
+      "Attirer du trafic et animer le point de vente",
+      "Réduire les ventes",
+      "Supprimer les promotions"
+    ],
+    "bonneReponse": 1,
+    "explication": "Soldes, Saint-Valentin, Black Friday, portes ouvertes… créent des moments forts d'achat."
+  },
+  {
+    "id": "va-024",
+    "theme": "valorisation",
+    "difficulte": 2,
+    "question": "Les soldes d'hiver et d'été durent combien de temps ?",
+    "reponses": [
+      "2 jours",
+      "3 mois",
+      "4 semaines",
+      "1 semaine"
+    ],
+    "bonneReponse": 2,
+    "explication": "Les soldes durent quatre semaines, deux fois par an, à des dates fixées au niveau national."
+  },
+  {
+    "id": "va-025",
+    "theme": "valorisation",
+    "difficulte": 2,
+    "question": "Combien de périodes de soldes y a-t-il par an en France métropolitaine ?",
+    "reponses": [
+      "2",
+      "1",
+      "4",
+      "6"
+    ],
+    "bonneReponse": 0,
+    "explication": "Il y a deux périodes de soldes : hiver et été."
+  },
+  {
+    "id": "va-026",
+    "theme": "valorisation",
+    "difficulte": 2,
+    "question": "Qu'est-ce qu'une opération promotionnelle ?",
+    "reponses": [
+      "Un changement définitif de gamme",
+      "Une action temporaire pour stimuler les ventes (réduction, lot, offre spéciale)",
+      "Une fermeture exceptionnelle",
+      "Un contrôle de prix"
+    ],
+    "bonneReponse": 1,
+    "explication": "Elle vise à attirer, écouler un stock ou lancer un produit."
+  },
+  {
+    "id": "va-027",
+    "theme": "valorisation",
+    "difficulte": 2,
+    "question": "Laquelle de ces offres est une opération promotionnelle ?",
+    "reponses": [
+      "« 2 achetés, le 2e à moitié prix »",
+      "Une étiquette de prix",
+      "Le bon de livraison",
+      "Le règlement intérieur"
+    ],
+    "bonneReponse": 0,
+    "explication": "L'offre groupée est un grand classique des promotions."
+  },
+  {
+    "id": "va-028",
+    "theme": "valorisation",
+    "difficulte": 3,
+    "question": "Un lot virtuel « 3 pour le prix de 2 » correspond à quelle réduction sur le prix unitaire (3 articles identiques) ?",
+    "reponses": [
+      "66 %",
+      "50 %",
+      "33,3 %",
+      "20 %"
+    ],
+    "bonneReponse": 2,
+    "explication": "3 articles payés 2 : on économise 1 article sur 3, soit 33,3 %."
+  },
+  {
+    "id": "va-029",
+    "theme": "valorisation",
+    "difficulte": 3,
+    "question": "« Le 2e produit à − 50 % » pour 2 articles à 20 € revient à quelle réduction globale ?",
+    "reponses": [
+      "25 %",
+      "50 %",
+      "10 %",
+      "30 %"
+    ],
+    "bonneReponse": 0,
+    "explication": "Total : 20 + 10 = 30 € au lieu de 40 €, soit 10 ÷ 40 = 25 % de réduction."
+  },
+  {
+    "id": "va-030",
+    "theme": "valorisation",
+    "difficulte": 2,
+    "question": "Une offre de remboursement (ODR) consiste à…",
+    "reponses": [
+      "Rembourser une partie du prix après achat sur présentation de justificatifs",
+      "Baisser immédiatement le prix en caisse",
+      "Offrir un produit pendant un mois",
+      "Reprendre l'ancien produit contre un bon d'achat"
+    ],
+    "bonneReponse": 0,
+    "explication": "Le client avance le prix, puis est remboursé par le fabricant."
+  },
+  {
+    "id": "va-031",
+    "theme": "valorisation",
+    "difficulte": 2,
+    "question": "Un échantillon gratuit permet de…",
+    "reponses": [
+      "Écouler des produits défectueux",
+      "Augmenter le prix",
+      "Supprimer la publicité",
+      "Faire essayer un produit pour déclencher l'achat"
+    ],
+    "bonneReponse": 3,
+    "explication": "L'essai réduit le risque perçu par le client."
+  },
+  {
+    "id": "va-032",
+    "theme": "valorisation",
+    "difficulte": 3,
+    "question": "Une vente flash est une promotion…",
+    "reponses": [
+      "De courte durée, avec urgence pour décider",
+      "Qui dure toute l'année",
+      "Interdite par la loi",
+      "Réservée à la caisse"
+    ],
+    "bonneReponse": 0,
+    "explication": "L'urgence incite à passer à l'acte d'achat."
+  },
+  {
+    "id": "va-033",
+    "theme": "valorisation",
+    "difficulte": 3,
+    "question": "Dans une promotion avec « prix barré », que doit indiquer le commerçant ?",
+    "reponses": [
+      "N'importe quel prix initial inventé",
+      "Aucun prix",
+      "Le prix du concurrent sans vérification",
+      "Un prix de référence réel et vérifiable"
+    ],
+    "bonneReponse": 3,
+    "explication": "L'annonce de réduction de prix doit se référer à un prix réellement pratiqué."
+  },
+  {
+    "id": "va-034",
+    "theme": "valorisation",
+    "difficulte": 3,
+    "question": "Théâtraliser une offre en magasin consiste à…",
+    "reponses": [
+      "Mettre en scène les produits (ambiance, décor, histoire) pour créer l'émotion",
+      "Proposer un spectacle de théâtre payant",
+      "Cacher les produits",
+      "Supprimer le décor"
+    ],
+    "bonneReponse": 0,
+    "explication": "La théâtralisation valorise l'offre et incite à l'achat."
+  },
+  {
+    "id": "va-035",
+    "theme": "valorisation",
+    "difficulte": 2,
+    "question": "Quel est l'intérêt d'un éclairage adapté sur un produit ?",
+    "reponses": [
+      "Éviter que le client le voie",
+      "Le mettre en valeur et attirer le regard",
+      "Réduire la taille du linéaire",
+      "Remplacer l'étiquette"
+    ],
+    "bonneReponse": 1,
+    "explication": "La lumière dirige l'attention et valorise la couleur et la qualité."
+  },
+  {
+    "id": "va-036",
+    "theme": "valorisation",
+    "difficulte": 2,
+    "question": "À quoi sert un plan de masse / plan d'implantation du magasin ?",
+    "reponses": [
+      "Fixer les salaires",
+      "Calculer la TVA",
+      "Organiser les rayons et les flux pour optimiser les ventes et la circulation",
+      "Préparer les déclarations fiscales"
+    ],
+    "bonneReponse": 2,
+    "explication": "Il schématise la place des rayons, des caisses et des zones chaudes ou froides."
+  },
+  {
+    "id": "ca-001",
+    "theme": "calculs",
+    "difficulte": 1,
+    "question": "Quelle est la formule de la marge commerciale ?",
+    "reponses": [
+      "Prix de vente HT − Prix d'achat HT",
+      "Prix de vente TTC − Prix d'achat HT",
+      "Prix d'achat HT − Prix de vente HT",
+      "Prix de vente HT ÷ Prix d'achat HT"
+    ],
+    "bonneReponse": 0,
+    "explication": "La marge commerciale est la différence entre le prix de vente HT et le prix d'achat HT."
+  },
+  {
+    "id": "ca-002",
+    "theme": "calculs",
+    "difficulte": 1,
+    "question": "Un article est acheté 40 € HT et vendu 60 € HT. Quelle est la marge commerciale ?",
+    "reponses": [
+      "20 €",
+      "100 €",
+      "1,5 €",
+      "24 €"
+    ],
+    "bonneReponse": 0,
+    "explication": "60 − 40 = 20 €."
+  },
+  {
+    "id": "ca-003",
+    "theme": "calculs",
+    "difficulte": 2,
+    "question": "Quelle est la formule du taux de marge ?",
+    "reponses": [
+      "Marge ÷ Prix d'achat HT × 100",
+      "Marge ÷ Prix de vente HT × 100",
+      "Prix d'achat ÷ Marge × 100",
+      "Prix de vente ÷ Prix d'achat × 100"
+    ],
+    "bonneReponse": 0,
+    "explication": "Le taux de marge se calcule par rapport au prix d'achat HT."
+  },
+  {
+    "id": "ca-004",
+    "theme": "calculs",
+    "difficulte": 2,
+    "question": "Quelle est la formule du taux de marque ?",
+    "reponses": [
+      "Marge ÷ Prix d'achat HT × 100",
+      "Prix d'achat ÷ Prix de vente × 100",
+      "Marge ÷ Prix de vente TTC × 100",
+      "Marge ÷ Prix de vente HT × 100"
+    ],
+    "bonneReponse": 3,
+    "explication": "Le taux de marque se calcule par rapport au prix de vente HT : il ne peut pas dépasser 100 %."
+  },
+  {
+    "id": "ca-005",
+    "theme": "calculs",
+    "difficulte": 2,
+    "question": "PA HT = 50 €, PV HT = 80 €. Quel est le taux de marge ?",
+    "reponses": [
+      "60 %",
+      "37,5 %",
+      "30 %",
+      "160 %"
+    ],
+    "bonneReponse": 0,
+    "explication": "Marge 30 € ; 30 ÷ 50 × 100 = 60 %."
+  },
+  {
+    "id": "ca-006",
+    "theme": "calculs",
+    "difficulte": 2,
+    "question": "PA HT = 50 €, PV HT = 80 €. Quel est le taux de marque ?",
+    "reponses": [
+      "37,5 %",
+      "60 %",
+      "30 %",
+      "62,5 %"
+    ],
+    "bonneReponse": 0,
+    "explication": "Marge 30 € ; 30 ÷ 80 × 100 = 37,5 %."
+  },
+  {
+    "id": "ca-007",
+    "theme": "calculs",
+    "difficulte": 2,
+    "question": "PA HT = 80 €, taux de marge = 25 %. Quel est le prix de vente HT ?",
+    "reponses": [
+      "105 €",
+      "100 €",
+      "20 €",
+      "120 €"
+    ],
+    "bonneReponse": 1,
+    "explication": "Marge = 80 × 0,25 = 20 € ; PV HT = 80 + 20 = 100 €."
+  },
+  {
+    "id": "ca-008",
+    "theme": "calculs",
+    "difficulte": 3,
+    "question": "PA HT = 60 €, taux de marque = 40 %. Quel est le prix de vente HT ?",
+    "reponses": [
+      "84 €",
+      "90 €",
+      "100 €",
+      "75 €"
+    ],
+    "bonneReponse": 2,
+    "explication": "Le PA représente 60 % du PV : PV = 60 ÷ 0,60 = 100 €."
+  },
+  {
+    "id": "ca-009",
+    "theme": "calculs",
+    "difficulte": 2,
+    "question": "PV HT = 200 €, taux de marque = 30 %. Quelle est la marge ?",
+    "reponses": [
+      "30 €",
+      "60 €",
+      "66,67 €",
+      "140 €"
+    ],
+    "bonneReponse": 1,
+    "explication": "200 × 0,30 = 60 €."
+  },
+  {
+    "id": "ca-010",
+    "theme": "calculs",
+    "difficulte": 2,
+    "question": "Quelle est la formule du coefficient multiplicateur ?",
+    "reponses": [
+      "Prix de vente HT ÷ Prix d'achat TTC",
+      "Marge ÷ Prix d'achat HT",
+      "Prix de vente TTC ÷ Prix d'achat HT",
+      "Prix d'achat HT ÷ Prix de vente TTC"
+    ],
+    "bonneReponse": 2,
+    "explication": "Il permet de passer directement du prix d'achat HT au prix de vente TTC."
+  },
+  {
+    "id": "ca-011",
+    "theme": "calculs",
+    "difficulte": 2,
+    "question": "PA HT = 25 €, coefficient multiplicateur = 2. Quel est le prix de vente TTC ?",
+    "reponses": [
+      "27 €",
+      "12,50 €",
+      "50 €",
+      "30 €"
+    ],
+    "bonneReponse": 2,
+    "explication": "25 × 2 = 50 € TTC."
+  },
+  {
+    "id": "ca-012",
+    "theme": "calculs",
+    "difficulte": 3,
+    "question": "PA HT = 100 €, PV TTC = 180 €. Quel est le coefficient multiplicateur ?",
+    "reponses": [
+      "1,8",
+      "0,56",
+      "80",
+      "1,2"
+    ],
+    "bonneReponse": 0,
+    "explication": "180 ÷ 100 = 1,8."
+  },
+  {
+    "id": "ca-013",
+    "theme": "calculs",
+    "difficulte": 1,
+    "question": "Quel est le taux normal de TVA en France ?",
+    "reponses": [
+      "20 %",
+      "10 %",
+      "5,5 %",
+      "25 %"
+    ],
+    "bonneReponse": 0,
+    "explication": "Le taux normal est de 20 %."
+  },
+  {
+    "id": "ca-014",
+    "theme": "calculs",
+    "difficulte": 2,
+    "question": "Quel taux de TVA s'applique à la plupart des produits alimentaires ?",
+    "reponses": [
+      "20 %",
+      "10 %",
+      "5,5 %",
+      "0 %"
+    ],
+    "bonneReponse": 2,
+    "explication": "L'alimentation est taxée à taux réduit de 5,5 % (hors restauration sur place notamment)."
+  },
+  {
+    "id": "ca-015",
+    "theme": "calculs",
+    "difficulte": 2,
+    "question": "Quel taux de TVA s'applique à la restauration sur place ?",
+    "reponses": [
+      "10 %",
+      "5,5 %",
+      "20 %",
+      "2,1 %"
+    ],
+    "bonneReponse": 0,
+    "explication": "La restauration sur place est au taux intermédiaire de 10 %."
+  },
+  {
+    "id": "ca-016",
+    "theme": "calculs",
+    "difficulte": 1,
+    "question": "Comment passe-t-on du prix HT au prix TTC avec une TVA de 20 % ?",
+    "reponses": [
+      "HT × 0,20",
+      "HT × 1,20",
+      "HT ÷ 1,20",
+      "HT − 20"
+    ],
+    "bonneReponse": 1,
+    "explication": "TTC = HT × (1 + taux de TVA)."
+  },
+  {
+    "id": "ca-017",
+    "theme": "calculs",
+    "difficulte": 2,
+    "question": "Un article coûte 45 € HT. Quel est son prix TTC avec une TVA de 20 % ?",
+    "reponses": [
+      "54 €",
+      "45,20 €",
+      "36 €",
+      "65 €"
+    ],
+    "bonneReponse": 0,
+    "explication": "45 × 1,20 = 54 €."
+  },
+  {
+    "id": "ca-018",
+    "theme": "calculs",
+    "difficulte": 2,
+    "question": "Un article est vendu 120 € TTC (TVA 20 %). Quel est son prix HT ?",
+    "reponses": [
+      "96 €",
+      "100 €",
+      "144 €",
+      "110 €"
+    ],
+    "bonneReponse": 1,
+    "explication": "120 ÷ 1,20 = 100 €."
+  },
+  {
+    "id": "ca-019",
+    "theme": "calculs",
+    "difficulte": 3,
+    "question": "Un article est vendu 21,10 € TTC (TVA 5,5 %). Quel est son prix HT ?",
+    "reponses": [
+      "19,94 €",
+      "22,26 €",
+      "15,60 €",
+      "20,00 €"
+    ],
+    "bonneReponse": 3,
+    "explication": "21,10 ÷ 1,055 = 20,00 €."
+  },
+  {
+    "id": "ca-020",
+    "theme": "calculs",
+    "difficulte": 2,
+    "question": "Un article coûte 50 € HT, TVA à 10 %. Quel est le prix TTC ?",
+    "reponses": [
+      "60 €",
+      "55 €",
+      "50,10 €",
+      "45 €"
+    ],
+    "bonneReponse": 1,
+    "explication": "50 × 1,10 = 55 €."
+  },
+  {
+    "id": "ca-021",
+    "theme": "calculs",
+    "difficulte": 2,
+    "question": "Un produit est vendu 60 € TTC avec 20 % de TVA. Quel est le montant de la TVA ?",
+    "reponses": [
+      "12 €",
+      "6 €",
+      "10 €",
+      "20 €"
+    ],
+    "bonneReponse": 2,
+    "explication": "HT = 60 ÷ 1,20 = 50 € ; TVA = 60 − 50 = 10 €."
+  },
+  {
+    "id": "ca-022",
+    "theme": "calculs",
+    "difficulte": 2,
+    "question": "Un produit coûte 200 € HT avec une TVA de 5,5 %. Quel est le montant de la TVA ?",
+    "reponses": [
+      "5,50 €",
+      "11 €",
+      "110 €",
+      "55 €"
+    ],
+    "bonneReponse": 1,
+    "explication": "200 × 0,055 = 11 €."
+  },
+  {
+    "id": "ca-023",
+    "theme": "calculs",
+    "difficulte": 3,
+    "question": "PV TTC = 36 € (TVA 20 %), PA HT = 20 €. Quelle est la marge commerciale ?",
+    "reponses": [
+      "16 €",
+      "10 €",
+      "6 €",
+      "12 €"
+    ],
+    "bonneReponse": 1,
+    "explication": "PV HT = 36 ÷ 1,20 = 30 € ; marge = 30 − 20 = 10 €."
+  },
+  {
+    "id": "ca-024",
+    "theme": "calculs",
+    "difficulte": 2,
+    "question": "Une remise de 15 % est accordée sur un article à 80 €. Quel prix paie le client ?",
+    "reponses": [
+      "65 €",
+      "95 €",
+      "68 €",
+      "12 €"
+    ],
+    "bonneReponse": 2,
+    "explication": "Remise = 80 × 0,15 = 12 € ; 80 − 12 = 68 €."
+  },
+  {
+    "id": "ca-025",
+    "theme": "calculs",
+    "difficulte": 3,
+    "question": "Un client bénéficie de deux remises successives de 20 % puis 10 % sur un article à 100 €. Quel prix paie-t-il ?",
+    "reponses": [
+      "70 €",
+      "30 €",
+      "72 €",
+      "80 €"
+    ],
+    "bonneReponse": 2,
+    "explication": "100 × 0,80 = 80 ; 80 × 0,90 = 72 €. Les remises successives ne s'additionnent pas."
+  },
+  {
+    "id": "ca-026",
+    "theme": "calculs",
+    "difficulte": 2,
+    "question": "Un article à 150 € est soldé à − 30 %. Quel est le nouveau prix ?",
+    "reponses": [
+      "105 €",
+      "120 €",
+      "45 €",
+      "180 €"
+    ],
+    "bonneReponse": 0,
+    "explication": "150 × 0,70 = 105 €."
+  },
+  {
+    "id": "ca-027",
+    "theme": "calculs",
+    "difficulte": 2,
+    "question": "Un article passe de 90 € à 72 €. Quel est le taux de réduction ?",
+    "reponses": [
+      "18 %",
+      "25 %",
+      "20 %",
+      "80 %"
+    ],
+    "bonneReponse": 2,
+    "explication": "(90 − 72) ÷ 90 × 100 = 20 %."
+  },
+  {
+    "id": "ca-028",
+    "theme": "calculs",
+    "difficulte": 3,
+    "question": "Quel terme désigne la réduction accordée en fin de période en fonction du chiffre d'affaires réalisé avec le client ?",
+    "reponses": [
+      "L'escompte",
+      "La remise",
+      "Le rabais",
+      "La ristourne"
+    ],
+    "bonneReponse": 3,
+    "explication": "La ristourne récompense un volume d'achats cumulé sur une période."
+  },
+  {
+    "id": "ca-029",
+    "theme": "calculs",
+    "difficulte": 3,
+    "question": "Quel terme désigne la réduction accordée pour paiement comptant ou anticipé ?",
+    "reponses": [
+      "L'escompte",
+      "La ristourne",
+      "Le rabais",
+      "La remise de fin d'année"
+    ],
+    "bonneReponse": 0,
+    "explication": "L'escompte rémunère le client qui paie plus tôt que prévu."
+  },
+  {
+    "id": "ca-030",
+    "theme": "calculs",
+    "difficulte": 2,
+    "question": "Une facture de 500 € est assortie d'un escompte de 2 % pour paiement comptant. Quel est le montant de l'escompte ?",
+    "reponses": [
+      "10 €",
+      "2 €",
+      "25 €",
+      "100 €"
+    ],
+    "bonneReponse": 0,
+    "explication": "500 × 0,02 = 10 €."
+  },
+  {
+    "id": "ca-031",
+    "theme": "calculs",
+    "difficulte": 3,
+    "question": "Quel terme désigne la réduction accordée en raison d'un défaut ou d'un retard de livraison ?",
+    "reponses": [
+      "L'escompte",
+      "Le rabais",
+      "La ristourne",
+      "La remise de quantité"
+    ],
+    "bonneReponse": 1,
+    "explication": "Le rabais compense un défaut de qualité ou de conformité."
+  },
+  {
+    "id": "ca-032",
+    "theme": "calculs",
+    "difficulte": 3,
+    "question": "Quelle formule définit le seuil de rentabilité en valeur ?",
+    "reponses": [
+      "Charges variables ÷ Charges fixes",
+      "Marge ÷ Charges fixes",
+      "Chiffre d'affaires − Charges fixes",
+      "Charges fixes ÷ Taux de marge sur coûts variables"
+    ],
+    "bonneReponse": 3,
+    "explication": "C'est le chiffre d'affaires à partir duquel l'entreprise ne perd plus d'argent."
+  },
+  {
+    "id": "ca-033",
+    "theme": "calculs",
+    "difficulte": 3,
+    "question": "Charges fixes = 12 000 €, taux de marge sur coûts variables = 40 %. Quel est le seuil de rentabilité ?",
+    "reponses": [
+      "4 800 €",
+      "48 000 €",
+      "12 400 €",
+      "30 000 €"
+    ],
+    "bonneReponse": 3,
+    "explication": "12 000 ÷ 0,40 = 30 000 €."
+  },
+  {
+    "id": "ca-034",
+    "theme": "calculs",
+    "difficulte": 3,
+    "question": "Charges fixes = 6 000 €, prix de vente unitaire 30 €, coût variable unitaire 18 €. Combien d'unités faut-il vendre pour atteindre le seuil de rentabilité ?",
+    "reponses": [
+      "200 unités",
+      "500 unités",
+      "333 unités",
+      "1 000 unités"
+    ],
+    "bonneReponse": 1,
+    "explication": "Marge sur coût variable = 12 € ; 6 000 ÷ 12 = 500 unités."
+  },
+  {
+    "id": "ca-035",
+    "theme": "calculs",
+    "difficulte": 3,
+    "question": "Que se passe-t-il si le chiffre d'affaires est inférieur au seuil de rentabilité ?",
+    "reponses": [
+      "L'entreprise réalise un bénéfice",
+      "L'entreprise ne paie plus de charges",
+      "L'entreprise réalise une perte",
+      "L'entreprise ne paie pas de TVA"
+    ],
+    "bonneReponse": 2,
+    "explication": "En dessous du seuil, la marge ne couvre pas toutes les charges."
+  },
+  {
+    "id": "ca-036",
+    "theme": "calculs",
+    "difficulte": 2,
+    "question": "Un magasin vend 200 articles avec une marge de 6 € chacun. Quelle est la marge totale ?",
+    "reponses": [
+      "206 €",
+      "1 200 €",
+      "33 €",
+      "194 €"
+    ],
+    "bonneReponse": 1,
+    "explication": "200 × 6 = 1 200 €."
+  },
+  {
+    "id": "ca-037",
+    "theme": "calculs",
+    "difficulte": 2,
+    "question": "Un article est vendu 95 € TTC avec un coefficient multiplicateur de 1,9. Quel est son prix d'achat HT ?",
+    "reponses": [
+      "50 €",
+      "180,50 €",
+      "75 €",
+      "57 €"
+    ],
+    "bonneReponse": 0,
+    "explication": "PA HT = 95 ÷ 1,9 = 50 €."
+  },
+  {
+    "id": "ed-001",
+    "theme": "droit",
+    "difficulte": 1,
+    "question": "Quelles sont les deux conditions essentielles pour qu'un contrat de vente soit formé ?",
+    "reponses": [
+      "L'accord sur la chose et sur le prix",
+      "La signature d'un notaire et un témoin",
+      "Un paiement en espèces",
+      "Une garantie de dix ans"
+    ],
+    "bonneReponse": 0,
+    "explication": "La vente est conclue dès que les parties s'entendent sur la chose et le prix."
+  },
+  {
+    "id": "ed-002",
+    "theme": "droit",
+    "difficulte": 2,
+    "question": "Quelle est l'obligation principale de l'acheteur dans un contrat de vente ?",
+    "reponses": [
+      "Fabriquer le produit",
+      "Assurer le SAV",
+      "Payer le prix convenu",
+      "Faire de la publicité"
+    ],
+    "bonneReponse": 2,
+    "explication": "Le vendeur doit livrer la chose, l'acheteur doit payer le prix."
+  },
+  {
+    "id": "ed-003",
+    "theme": "droit",
+    "difficulte": 2,
+    "question": "Quelle est l'obligation principale du vendeur dans un contrat de vente ?",
+    "reponses": [
+      "Reprendre le bien sans motif",
+      "Payer le client",
+      "Délivrer un bien conforme à ce qui a été convenu",
+      "Rembourser sans condition"
+    ],
+    "bonneReponse": 2,
+    "explication": "Le vendeur doit livrer et garantir le bien vendu (conformité, vices cachés)."
+  },
+  {
+    "id": "ed-004",
+    "theme": "droit",
+    "difficulte": 2,
+    "question": "Parmi ces conditions, laquelle est nécessaire à la validité d'un contrat ?",
+    "reponses": [
+      "L'accord d'un huissier",
+      "Un cachet de la mairie",
+      "Une photo des parties",
+      "Le consentement libre et éclairé des parties"
+    ],
+    "bonneReponse": 3,
+    "explication": "Le consentement ne doit pas être vicié par une erreur, un dol ou la violence."
+  },
+  {
+    "id": "ed-005",
+    "theme": "droit",
+    "difficulte": 3,
+    "question": "Un vendeur ment volontairement sur les caractéristiques d'un produit pour obtenir la vente. C'est…",
+    "reponses": [
+      "Une simple erreur",
+      "Un dol, vice du consentement",
+      "Une promotion",
+      "Un usage commercial autorisé"
+    ],
+    "bonneReponse": 1,
+    "explication": "Le dol est une tromperie volontaire qui peut entraîner l'annulation du contrat."
+  },
+  {
+    "id": "ed-006",
+    "theme": "droit",
+    "difficulte": 1,
+    "question": "Qui est un « consommateur » au sens du droit de la consommation ?",
+    "reponses": [
+      "Une entreprise qui achète des fournitures",
+      "Une personne physique qui achète pour un usage non professionnel",
+      "Un grossiste",
+      "Un fabricant"
+    ],
+    "bonneReponse": 1,
+    "explication": "Le consommateur agit en dehors de son activité professionnelle."
+  },
+  {
+    "id": "ed-007",
+    "theme": "droit",
+    "difficulte": 1,
+    "question": "Que doit obligatoirement afficher un commerçant pour les produits proposés à la vente aux consommateurs ?",
+    "reponses": [
+      "Le prix d'achat",
+      "Le prix TTC",
+      "La marge réalisée",
+      "Le salaire du vendeur"
+    ],
+    "bonneReponse": 1,
+    "explication": "Le consommateur doit être informé du prix toutes taxes comprises."
+  },
+  {
+    "id": "ed-008",
+    "theme": "droit",
+    "difficulte": 2,
+    "question": "Un consommateur achète un manteau dans un magasin physique. Dispose-t-il d'un droit de rétractation légal de 14 jours ?",
+    "reponses": [
+      "Oui, toujours",
+      "Oui, mais seulement en soldes",
+      "Oui, pendant 1 an",
+      "Non, sauf si le magasin offre ce droit commercialement"
+    ],
+    "bonneReponse": 3,
+    "explication": "Le droit de rétractation légal concerne les ventes à distance et hors établissement, pas les achats en magasin."
+  },
+  {
+    "id": "ed-009",
+    "theme": "droit",
+    "difficulte": 2,
+    "question": "Quel est le délai légal de rétractation pour un achat en ligne ?",
+    "reponses": [
+      "14 jours",
+      "7 jours",
+      "30 jours",
+      "48 heures"
+    ],
+    "bonneReponse": 0,
+    "explication": "Le consommateur dispose de 14 jours à compter de la réception du bien."
+  },
+  {
+    "id": "ed-010",
+    "theme": "droit",
+    "difficulte": 3,
+    "question": "À partir de quand court le délai de rétractation de 14 jours pour l'achat d'un bien commandé en ligne ?",
+    "reponses": [
+      "À la date de la commande",
+      "À la date du paiement",
+      "À la réception du bien",
+      "À la date de la facture"
+    ],
+    "bonneReponse": 2,
+    "explication": "Pour un bien, le délai démarre à la réception par le consommateur."
+  },
+  {
+    "id": "ed-011",
+    "theme": "droit",
+    "difficulte": 3,
+    "question": "Pour quel achat en ligne le droit de rétractation est-il exclu ?",
+    "reponses": [
+      "Un manteau standard",
+      "Un livre papier",
+      "Une paire de chaussures",
+      "Un produit personnalisé fabriqué sur mesure pour le client"
+    ],
+    "bonneReponse": 3,
+    "explication": "Les biens personnalisés sont exclus du droit de rétractation."
+  },
+  {
+    "id": "ed-012",
+    "theme": "droit",
+    "difficulte": 2,
+    "question": "Que permettent des arrhes versées à la commande ?",
+    "reponses": [
+      "D'obliger l'acheteur à acheter dans tous les cas",
+      "De supprimer la TVA",
+      "Chaque partie peut renoncer : l'acheteur perd les arrhes, le vendeur les rend en double",
+      "De payer la livraison"
+    ],
+    "bonneReponse": 2,
+    "explication": "Les arrhes sont une faculté de dédit moyennant une perte financière."
+  },
+  {
+    "id": "ed-013",
+    "theme": "droit",
+    "difficulte": 3,
+    "question": "Quelle est la différence entre acompte et arrhes ?",
+    "reponses": [
+      "Les arrhes engagent définitivement les deux parties",
+      "L'acompte engage définitivement les deux parties",
+      "Il n'y a aucune différence",
+      "L'acompte est réservé aux entreprises"
+    ],
+    "bonneReponse": 1,
+    "explication": "Avec l'acompte, aucune partie ne peut renoncer sans exécuter le contrat."
+  },
+  {
+    "id": "ed-014",
+    "theme": "droit",
+    "difficulte": 2,
+    "question": "Quelle est la durée de la garantie légale de conformité pour un bien neuf ?",
+    "reponses": [
+      "6 mois",
+      "2 ans à compter de la délivrance du bien",
+      "10 ans",
+      "1 mois"
+    ],
+    "bonneReponse": 1,
+    "explication": "Le vendeur doit réparer ou remplacer un bien non conforme pendant 2 ans."
+  },
+  {
+    "id": "ed-015",
+    "theme": "droit",
+    "difficulte": 2,
+    "question": "Que couvre la garantie légale de conformité ?",
+    "reponses": [
+      "Les dommages causés volontairement par le client",
+      "La perte du bien par le client",
+      "Un bien non conforme à ce qui a été promis ou impropre à son usage",
+      "Les produits personnalisés par erreur de saisie du client"
+    ],
+    "bonneReponse": 2,
+    "explication": "Elle protège l'acheteur lorsque le bien ne correspond pas au contrat ou à l'usage attendu."
+  },
+  {
+    "id": "ed-016",
+    "theme": "droit",
+    "difficulte": 3,
+    "question": "Qu'est-ce qu'un vice caché ?",
+    "reponses": [
+      "Une rayure visible lors de l'achat",
+      "Un défaut non apparent à l'achat, antérieur à la vente, qui rend le bien impropre à l'usage",
+      "Un défaut causé par le client",
+      "Une erreur de prix"
+    ],
+    "bonneReponse": 1,
+    "explication": "Le vendeur doit garantir ce défaut même s'il l'ignorait."
+  },
+  {
+    "id": "ed-017",
+    "theme": "droit",
+    "difficulte": 2,
+    "question": "La garantie commerciale est…",
+    "reponses": [
+      "Obligatoire pour tout produit",
+      "Toujours gratuite",
+      "Illimitée dans le temps",
+      "Facultative et proposée par le vendeur ou le fabricant"
+    ],
+    "bonneReponse": 3,
+    "explication": "Elle s'ajoute aux garanties légales, qui, elles, sont obligatoires."
+  },
+  {
+    "id": "ed-018",
+    "theme": "droit",
+    "difficulte": 1,
+    "question": "Quel organisme contrôle les règles de concurrence et de protection des consommateurs ?",
+    "reponses": [
+      "La CNIL",
+      "La Banque de France",
+      "La DGCCRF",
+      "L'URSSAF"
+    ],
+    "bonneReponse": 2,
+    "explication": "La DGCCRF vérifie la loyauté des pratiques commerciales."
+  },
+  {
+    "id": "ed-019",
+    "theme": "droit",
+    "difficulte": 2,
+    "question": "Une publicité annonce « −50 % » alors que le prix de référence n'a jamais été pratiqué. C'est…",
+    "reponses": [
+      "Une pratique autorisée",
+      "Un déstockage légal",
+      "Un événement commercial",
+      "Une pratique commerciale trompeuse"
+    ],
+    "bonneReponse": 3,
+    "explication": "Une information fausse ou de nature à induire en erreur est interdite."
+  },
+  {
+    "id": "ed-020",
+    "theme": "droit",
+    "difficulte": 2,
+    "question": "Subordonner la vente d'un produit à l'achat d'un autre produit sans motif légitime est…",
+    "reponses": [
+      "Une vente additionnelle autorisée",
+      "Une promotion",
+      "Une vente liée interdite",
+      "Un échantillonnage"
+    ],
+    "bonneReponse": 2,
+    "explication": "La vente liée limite la liberté de choix du consommateur."
+  },
+  {
+    "id": "ed-021",
+    "theme": "droit",
+    "difficulte": 2,
+    "question": "Envoyer un produit non commandé à un consommateur et lui en réclamer le prix est…",
+    "reponses": [
+      "Une offre promotionnelle autorisée",
+      "Un geste commercial",
+      "Une vente forcée interdite",
+      "Une vente à distance régulière"
+    ],
+    "bonneReponse": 2,
+    "explication": "Le consommateur n'est pas tenu de payer un produit qu'il n'a pas demandé."
+  },
+  {
+    "id": "ed-022",
+    "theme": "droit",
+    "difficulte": 3,
+    "question": "La vente à perte consiste à…",
+    "reponses": [
+      "Vendre un produit défectueux",
+      "Vendre un produit avec une grande marge",
+      "Revendre un produit à un prix inférieur à son prix d'achat effectif",
+      "Vendre seulement en gros"
+    ],
+    "bonneReponse": 2,
+    "explication": "Elle est interdite en principe, avec des exceptions (soldes, produits périssables, fin de série…)."
+  },
+  {
+    "id": "ed-023",
+    "theme": "droit",
+    "difficulte": 3,
+    "question": "Un commerçant refuse de vendre un produit en stock à un client sans motif légitime. C'est…",
+    "reponses": [
+      "Un droit absolu du commerçant",
+      "Une pratique de marchandisage",
+      "Un conseil du vendeur",
+      "Un refus de vente interdit"
+    ],
+    "bonneReponse": 3,
+    "explication": "Le refus de vente sans motif légitime est une pratique prohibée."
+  },
+  {
+    "id": "ed-024",
+    "theme": "droit",
+    "difficulte": 2,
+    "question": "Que signifie CGV ?",
+    "reponses": [
+      "Contrat Général de Vérification",
+      "Conditions Générales de Vente",
+      "Coût Global de Vente",
+      "Calcul Gratuit de Valeur"
+    ],
+    "bonneReponse": 1,
+    "explication": "Les CGV fixent les règles de vente appliquées à tous les clients (prix, paiement, livraison, garanties)."
+  },
+  {
+    "id": "ed-025",
+    "theme": "droit",
+    "difficulte": 1,
+    "question": "Quel est le type de contrat de travail de droit commun ?",
+    "reponses": [
+      "Le CDD",
+      "L'intérim",
+      "Le contrat saisonnier",
+      "Le CDI (contrat à durée indéterminée)"
+    ],
+    "bonneReponse": 3,
+    "explication": "Le CDI est la forme normale et générale de la relation de travail."
+  },
+  {
+    "id": "ed-026",
+    "theme": "droit",
+    "difficulte": 2,
+    "question": "Quand peut-on conclure un CDD ?",
+    "reponses": [
+      "Pour remplacer un salarié absent ou faire face à un surcroît temporaire d'activité",
+      "Pour pourvoir durablement un poste permanent",
+      "Pour faire travailler sans fiche de paie",
+      "Sans contrat écrit"
+    ],
+    "bonneReponse": 0,
+    "explication": "Le CDD n'est autorisé que dans des cas précis, pour une tâche temporaire."
+  },
+  {
+    "id": "ed-027",
+    "theme": "droit",
+    "difficulte": 2,
+    "question": "Un CDD doit être conclu…",
+    "reponses": [
+      "Oralement uniquement",
+      "Sans durée",
+      "Par écrit",
+      "Sans mention du motif"
+    ],
+    "bonneReponse": 2,
+    "explication": "L'écrit est obligatoire et mentionne le motif et la durée."
+  },
+  {
+    "id": "ed-028",
+    "theme": "droit",
+    "difficulte": 2,
+    "question": "Quelle est la durée légale hebdomadaire du travail en France ?",
+    "reponses": [
+      "35 heures",
+      "39 heures",
+      "32 heures",
+      "48 heures"
+    ],
+    "bonneReponse": 0,
+    "explication": "La durée légale est de 35 h par semaine ; au-delà, ce sont des heures supplémentaires."
+  },
+  {
+    "id": "ed-029",
+    "theme": "droit",
+    "difficulte": 2,
+    "question": "Quel document le salarié reçoit-il chaque mois pour justifier sa rémunération ?",
+    "reponses": [
+      "Le bon de livraison",
+      "La facture",
+      "Le devis",
+      "Le bulletin de paie (fiche de paie)"
+    ],
+    "bonneReponse": 3,
+    "explication": "Le bulletin de paie détaille le salaire brut, les cotisations et le net."
+  },
+  {
+    "id": "ed-030",
+    "theme": "droit",
+    "difficulte": 3,
+    "question": "Que signifie la période d'essai ?",
+    "reponses": [
+      "Permettre à l'employeur d'évaluer le salarié et au salarié de juger le poste",
+      "Garantir un emploi à vie",
+      "Imposer un salaire fixe",
+      "Supprimer tous les droits du salarié"
+    ],
+    "bonneReponse": 0,
+    "explication": "Pendant cette période, chacune des parties peut rompre le contrat plus facilement, dans le respect de règles de préavis."
+  },
+  {
+    "id": "ed-031",
+    "theme": "droit",
+    "difficulte": 3,
+    "question": "Que représente le SMIC ?",
+    "reponses": [
+      "Le salaire maximum d'un salarié",
+      "Un impôt",
+      "Le salaire minimum légal en dessous duquel on ne peut pas rémunérer un salarié",
+      "Un type de contrat"
+    ],
+    "bonneReponse": 2,
+    "explication": "Le SMIC est revalorisé régulièrement et s'impose à l'employeur."
+  },
+  {
+    "id": "ed-032",
+    "theme": "droit",
+    "difficulte": 2,
+    "question": "Un vendeur en alternance est lié à son employeur par…",
+    "reponses": [
+      "Une licence commerciale",
+      "Un contrat de vente",
+      "Un contrat d'apprentissage ou de professionnalisation",
+      "Une promesse orale non écrite"
+    ],
+    "bonneReponse": 2,
+    "explication": "Ces contrats associent formation et travail en entreprise."
+  },
+  {
+    "id": "vo-001",
+    "theme": "vocabulaire",
+    "difficulte": 1,
+    "question": "Que désigne le chiffre d'affaires (CA) ?",
+    "reponses": [
+      "Le bénéfice net",
+      "Le salaire du directeur",
+      "Le prix d'achat des marchandises",
+      "Le total des ventes d'une entreprise sur une période"
+    ],
+    "bonneReponse": 3,
+    "explication": "Le CA correspond aux montants facturés aux clients, avant déduction des charges."
+  },
+  {
+    "id": "vo-002",
+    "theme": "vocabulaire",
+    "difficulte": 1,
+    "question": "Qu'est-ce qu'une cible commerciale ?",
+    "reponses": [
+      "Le groupe de clients ou prospects visé par l'entreprise",
+      "Un objectif financier",
+      "Un emplacement en rayon",
+      "Un type de contrat"
+    ],
+    "bonneReponse": 0,
+    "explication": "Définir sa cible permet d'adapter son offre et sa communication."
+  },
+  {
+    "id": "vo-003",
+    "theme": "vocabulaire",
+    "difficulte": 1,
+    "question": "Qu'est-ce que la clientèle d'une entreprise ?",
+    "reponses": [
+      "L'ensemble de ses fournisseurs",
+      "Son personnel",
+      "L'ensemble de ses clients",
+      "Ses concurrents"
+    ],
+    "bonneReponse": 2,
+    "explication": "La clientèle regroupe les personnes ou entreprises qui achètent à l'entreprise."
+  },
+  {
+    "id": "vo-004",
+    "theme": "vocabulaire",
+    "difficulte": 2,
+    "question": "Qu'est-ce qu'une référence en commerce ?",
+    "reponses": [
+      "Une lettre de recommandation",
+      "Un client",
+      "Un type de caisse",
+      "Un produit distinct caractérisé par une marque, un modèle, une taille ou une couleur"
+    ],
+    "bonneReponse": 3,
+    "explication": "Chaque article différent (taille, couleur…) constitue une référence."
+  },
+  {
+    "id": "vo-005",
+    "theme": "vocabulaire",
+    "difficulte": 2,
+    "question": "Qu'est-ce que la gamme d'un produit ?",
+    "reponses": [
+      "Un type de TVA",
+      "Un prix de vente",
+      "Un moyen de paiement",
+      "L'ensemble des produits d'une même famille ou d'une même marque"
+    ],
+    "bonneReponse": 3,
+    "explication": "On parle de gamme étendue, courte, haut de gamme ou entrée de gamme."
+  },
+  {
+    "id": "vo-006",
+    "theme": "vocabulaire",
+    "difficulte": 3,
+    "question": "L'assortiment d'un magasin correspond à…",
+    "reponses": [
+      "L'ensemble des produits proposés à la vente, défini par sa largeur et sa profondeur",
+      "Le nombre de caisses",
+      "Le chiffre d'affaires du rayon",
+      "La liste des clients"
+    ],
+    "bonneReponse": 0,
+    "explication": "La largeur = nombre de familles de produits ; la profondeur = nombre de références par famille."
+  },
+  {
+    "id": "vo-007",
+    "theme": "vocabulaire",
+    "difficulte": 3,
+    "question": "Un assortiment « large et peu profond » signifie…",
+    "reponses": [
+      "Beaucoup de familles de produits avec peu de références dans chacune",
+      "Peu de familles avec beaucoup de références",
+      "Un magasin sans produits",
+      "Un magasin avec un seul produit"
+    ],
+    "bonneReponse": 0,
+    "explication": "C'est le cas d'un magasin généraliste proposant beaucoup de familles mais peu de choix par famille."
+  },
+  {
+    "id": "vo-008",
+    "theme": "vocabulaire",
+    "difficulte": 2,
+    "question": "Qu'est-ce qu'une rupture de stock ?",
+    "reponses": [
+      "Un excès de produits en réserve",
+      "Un produit en promotion",
+      "Un produit demandé mais indisponible",
+      "Un produit défectueux"
+    ],
+    "bonneReponse": 2,
+    "explication": "La rupture entraîne des ventes perdues et un client mécontent."
+  },
+  {
+    "id": "vo-009",
+    "theme": "vocabulaire",
+    "difficulte": 2,
+    "question": "Qu'est-ce que le stock de sécurité ?",
+    "reponses": [
+      "Un stock destiné aux soldes",
+      "Une quantité minimale conservée pour éviter la rupture",
+      "Un stock de produits périmés",
+      "Un stock de matériel de caisse"
+    ],
+    "bonneReponse": 1,
+    "explication": "Il permet de faire face à un retard de livraison ou à un pic de ventes."
+  },
+  {
+    "id": "vo-010",
+    "theme": "vocabulaire",
+    "difficulte": 2,
+    "question": "À quoi sert l'inventaire ?",
+    "reponses": [
+      "Fixer les prix de vente",
+      "Compter et vérifier les produits réellement présents en stock",
+      "Gérer les congés du personnel",
+      "Fidéliser les clients"
+    ],
+    "bonneReponse": 1,
+    "explication": "L'inventaire compare le stock réel au stock théorique."
+  },
+  {
+    "id": "vo-011",
+    "theme": "vocabulaire",
+    "difficulte": 1,
+    "question": "Qu'est-ce que la concurrence ?",
+    "reponses": [
+      "Les clients de l'entreprise",
+      "Les fournisseurs",
+      "L'ensemble des entreprises qui vendent des produits similaires aux mêmes clients",
+      "Les salariés"
+    ],
+    "bonneReponse": 2,
+    "explication": "Se différencier de la concurrence est un enjeu constant pour une entreprise."
+  },
+  {
+    "id": "vo-012",
+    "theme": "vocabulaire",
+    "difficulte": 2,
+    "question": "Que signifie le positionnement d'une entreprise ou d'un produit ?",
+    "reponses": [
+      "L'emplacement physique du magasin",
+      "Le rang du magasin dans la rue",
+      "La place qu'il occupe dans l'esprit des clients par rapport à ses concurrents",
+      "Le classement des fournisseurs"
+    ],
+    "bonneReponse": 2,
+    "explication": "Exemples : bas prix, qualité premium, proximité."
+  },
+  {
+    "id": "vo-013",
+    "theme": "vocabulaire",
+    "difficulte": 2,
+    "question": "Que désigne le mix marketing (4P) ?",
+    "reponses": [
+      "Prospect, Panier, Point de vente, Paiement",
+      "Produit, Personnel, Plan, Pays",
+      "Produit, Prix, Place (distribution), Promotion (communication)",
+      "Prix, Publicité, Prospection, Perspective"
+    ],
+    "bonneReponse": 2,
+    "explication": "Le mix marketing est l'ensemble des variables que l'entreprise combine pour répondre au marché."
+  },
+  {
+    "id": "vo-014",
+    "theme": "vocabulaire",
+    "difficulte": 1,
+    "question": "Qu'est-ce qu'une marque de distributeur (MDD) ?",
+    "reponses": [
+      "Une marque d'un grand fabricant",
+      "Une marque étrangère",
+      "Une marque créée par l'enseigne qui vend le produit",
+      "Une marque de voiture"
+    ],
+    "bonneReponse": 2,
+    "explication": "Exemples : produits portant le nom de l'enseigne, souvent moins chers."
+  },
+  {
+    "id": "vo-015",
+    "theme": "vocabulaire",
+    "difficulte": 2,
+    "question": "Que désigne la notoriété d'une marque ?",
+    "reponses": [
+      "Son prix",
+      "Le fait qu'elle soit connue du public",
+      "Sa couleur",
+      "Sa date de création"
+    ],
+    "bonneReponse": 1,
+    "explication": "On distingue notoriété spontanée et notoriété assistée."
+  },
+  {
+    "id": "vo-016",
+    "theme": "vocabulaire",
+    "difficulte": 2,
+    "question": "Qu'est-ce que l'image de marque ?",
+    "reponses": [
+      "Le logo uniquement",
+      "L'ensemble des perceptions qu'ont les clients de la marque",
+      "Le prix des produits",
+      "Le chiffre d'affaires"
+    ],
+    "bonneReponse": 1,
+    "explication": "Elle dépend de la qualité, du prix, de la communication et de l'expérience client."
+  },
+  {
+    "id": "vo-017",
+    "theme": "vocabulaire",
+    "difficulte": 2,
+    "question": "Qu'est-ce qu'un argumentaire de vente ?",
+    "reponses": [
+      "Un contrat de vente",
+      "Un bon de commande",
+      "Une facture",
+      "Un document ou discours structuré présentant les arguments d'un produit"
+    ],
+    "bonneReponse": 3,
+    "explication": "Il présente les caractéristiques, avantages et preuves adaptés au client."
+  },
+  {
+    "id": "vo-018",
+    "theme": "vocabulaire",
+    "difficulte": 1,
+    "question": "Qu'est-ce qu'un devis ?",
+    "reponses": [
+      "Un document qui chiffre une prestation ou un produit avant l'achat",
+      "Le paiement final",
+      "Une facture payée",
+      "Un ticket de caisse"
+    ],
+    "bonneReponse": 0,
+    "explication": "Signé par le client, il engage les deux parties aux conditions indiquées."
+  },
+  {
+    "id": "vo-019",
+    "theme": "vocabulaire",
+    "difficulte": 2,
+    "question": "Qu'est-ce qu'un avoir ?",
+    "reponses": [
+      "Un bon de commande",
+      "Un devis",
+      "Un document qui annule en tout ou partie une facture ou crédite le client",
+      "Un virement bancaire"
+    ],
+    "bonneReponse": 2,
+    "explication": "L'avoir peut être émis suite à un retour de marchandises ou un geste commercial."
+  },
+  {
+    "id": "vo-020",
+    "theme": "vocabulaire",
+    "difficulte": 2,
+    "question": "Le « click and collect » est…",
+    "reponses": [
+      "Un achat en ligne retiré en magasin",
+      "Un paiement sans contact",
+      "Une vente aux enchères",
+      "Un type de soldes"
+    ],
+    "bonneReponse": 0,
+    "explication": "Le client commande sur Internet puis récupère son produit dans un point de vente."
+  },
+  {
+    "id": "vo-021",
+    "theme": "vocabulaire",
+    "difficulte": 3,
+    "question": "Le commerce omnicanal consiste à…",
+    "reponses": [
+      "Fermer les magasins physiques",
+      "Vendre uniquement sur un site",
+      "Proposer au client une expérience cohérente sur tous les canaux (magasin, web, mobile)",
+      "Vendre uniquement par téléphone"
+    ],
+    "bonneReponse": 2,
+    "explication": "Les canaux sont interconnectés : stocks, prix et relation client sont unifiés."
+  },
+  {
+    "id": "vo-022",
+    "theme": "vocabulaire",
+    "difficulte": 2,
+    "question": "Qu'est-ce que le e-commerce ?",
+    "reponses": [
+      "Le commerce d'électricité",
+      "L'achat et la vente de produits ou services sur Internet",
+      "Le commerce de voitures",
+      "Le commerce de gros"
+    ],
+    "bonneReponse": 1,
+    "explication": "Il se caractérise par la vente à distance via un site ou une application."
+  },
+  {
+    "id": "vo-023",
+    "theme": "vocabulaire",
+    "difficulte": 2,
+    "question": "Qu'est-ce qu'un grossiste ?",
+    "reponses": [
+      "Un client particulier",
+      "Un commerçant qui achète en grande quantité aux producteurs pour revendre à des détaillants",
+      "Un fabricant",
+      "Un transporteur"
+    ],
+    "bonneReponse": 1,
+    "explication": "Le grossiste est intermédiaire entre les producteurs et les détaillants."
+  },
+  {
+    "id": "vo-024",
+    "theme": "vocabulaire",
+    "difficulte": 2,
+    "question": "Qu'est-ce qu'un détaillant ?",
+    "reponses": [
+      "Un commerçant qui vend directement aux consommateurs",
+      "Un producteur",
+      "Un grossiste",
+      "Une banque"
+    ],
+    "bonneReponse": 0,
+    "explication": "Il vend en petites quantités au consommateur final."
+  },
+  {
+    "id": "vo-025",
+    "theme": "vocabulaire",
+    "difficulte": 3,
+    "question": "Qu'est-ce que la franchise commerciale ?",
+    "reponses": [
+      "Un contrat par lequel un franchiseur autorise un franchisé à exploiter son enseigne et son savoir-faire",
+      "La vente sans TVA",
+      "Un moyen de paiement",
+      "Une remise de fin d'année"
+    ],
+    "bonneReponse": 0,
+    "explication": "Le franchisé verse généralement un droit d'entrée et des redevances."
+  },
+  {
+    "id": "vo-026",
+    "theme": "vocabulaire",
+    "difficulte": 2,
+    "question": "Que signifie DLC sur un produit alimentaire ?",
+    "reponses": [
+      "Date limite de consommation (à ne pas dépasser, sécurité sanitaire)",
+      "Date limite de commande",
+      "Délai de livraison convenu",
+      "Durée de la location du congélateur"
+    ],
+    "bonneReponse": 0,
+    "explication": "Au-delà de la DLC, le produit ne doit plus être consommé ni vendu."
+  },
+  {
+    "id": "vo-027",
+    "theme": "vocabulaire",
+    "difficulte": 3,
+    "question": "Quelle est la différence entre DLC et DDM (« à consommer de préférence avant ») ?",
+    "reponses": [
+      "Dépasser la DDM est dangereux",
+      "Elles sont identiques",
+      "La DDM est réservée aux boissons alcoolisées",
+      "Dépasser la DDM n'est pas dangereux, seulement une perte de qualité possible"
+    ],
+    "bonneReponse": 3,
+    "explication": "La DDM concerne la qualité (goût, texture), pas la sécurité sanitaire."
+  },
+  {
+    "id": "vo-028",
+    "theme": "vocabulaire",
+    "difficulte": 1,
+    "question": "Qu'est-ce qu'un lead ?",
+    "reponses": [
+      "Un type de contrat de travail",
+      "Un contact commercial qui a manifesté un intérêt pour l'offre",
+      "Un produit défectueux",
+      "Un moyen de paiement"
+    ],
+    "bonneReponse": 1,
+    "explication": "Un lead est un prospect potentiel identifié, par exemple après un formulaire ou un salon."
+  },
+  {
+    "id": "vo-029",
+    "theme": "vocabulaire",
+    "difficulte": 2,
+    "question": "Qu'est-ce qu'un avantage concurrentiel ?",
+    "reponses": [
+      "Un défaut du produit",
+      "Un atout qui distingue l'entreprise de ses concurrents",
+      "Un type de TVA",
+      "Un moyen de paiement"
+    ],
+    "bonneReponse": 1,
+    "explication": "Il peut résider dans le prix, la qualité, le service, la marque, la rapidité…"
+  },
+  {
+    "id": "vo-030",
+    "theme": "vocabulaire",
+    "difficulte": 2,
+    "question": "Qu'est-ce que la valeur perçue d'un produit ?",
+    "reponses": [
+      "Son prix d'achat par le commerçant",
+      "Son coût de fabrication",
+      "Sa marge brute",
+      "L'importance que le client lui attribue, indépendamment de son coût de production"
+    ],
+    "bonneReponse": 3,
+    "explication": "Un client peut accepter de payer plus cher un produit auquel il attribue une grande valeur."
+  },
+  {
+    "id": "vo-031",
+    "theme": "vocabulaire",
+    "difficulte": 2,
+    "question": "Qu'est-ce qu'un KPI en commerce ?",
+    "reponses": [
+      "Un type de contrat",
+      "Une marque de caisse",
+      "Un statut juridique",
+      "Un indicateur clé de performance"
+    ],
+    "bonneReponse": 3,
+    "explication": "Exemples : CA, panier moyen, taux de transformation."
+  },
+  {
+    "id": "vo-032",
+    "theme": "vocabulaire",
+    "difficulte": 3,
+    "question": "Le « cross-selling » correspond à…",
+    "reponses": [
+      "Le fait de réduire la gamme",
+      "La vente à perte",
+      "Une baisse de prix générale",
+      "La vente croisée : proposer des produits complémentaires à celui acheté"
+    ],
+    "bonneReponse": 3,
+    "explication": "C'est l'équivalent de la vente additionnelle/complémentaire."
+  },
+  {
+    "id": "vo-033",
+    "theme": "vocabulaire",
+    "difficulte": 3,
+    "question": "Le « up-selling » correspond à…",
+    "reponses": [
+      "Une réduction de prix",
+      "La montée en gamme : proposer une version supérieure du produit",
+      "Une vente à perte",
+      "Une offre de remboursement"
+    ],
+    "bonneReponse": 1,
+    "explication": "Le client est incité à choisir un modèle plus complet ou plus cher."
+  }
+]
