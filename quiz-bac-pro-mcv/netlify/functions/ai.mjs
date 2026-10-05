@@ -1,6 +1,6 @@
 // Fonction Netlify : explique / corrige une réponse de quiz avec l'API Gemini.
 // La clé reste côté serveur (variable d'environnement GEMINI_API_KEY).
-const MODEL = process.env.GEMINI_MODEL || 'gemini-2.0-flash'
+const MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash'
 const json = (body, status = 200) =>
   new Response(JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json' } })
 const clip = (s, n) => String(s ?? '').slice(0, n)
@@ -27,7 +27,7 @@ ${b.demande ? `Demande de l'élève : ${clip(b.demande, 300)}` : "Explique pourq
   const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', 'x-goog-api-key': key },
-    body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { temperature: 0.4, maxOutputTokens: 400 } }),
+    body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { temperature: 0.4, maxOutputTokens: 1200, thinkingConfig: { thinkingBudget: 0 } } }),
   })
   if (!r.ok) return json({ error: `Erreur IA (${r.status})` }, 502)
   const data = await r.json()
