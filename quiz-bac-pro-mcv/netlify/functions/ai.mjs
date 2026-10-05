@@ -8,7 +8,8 @@ const clip = (s, n) => String(s ?? '').slice(0, n)
 
 export default async (req) => {
   if (req.method !== 'POST') return json({ error: 'Méthode non autorisée' }, 405)
-  const key = process.env.GEMINI_API_KEY
+  // trim : un espace ou un retour à la ligne collé avec la clé provoque une erreur 400
+  const key = (process.env.GEMINI_API_KEY || '').trim()
   if (!key) return json({ error: 'Clé API non configurée sur le serveur.' }, 500)
 
   let b
@@ -34,7 +35,13 @@ ${b.demande ? `Demande de l'élève : ${clip(b.demande, 300)}` : "Explique pourq
     })
     if (r.ok) break
   }
-  if (!r.ok) return json({ error: `Erreur IA (${r.status})` }, 502)
+  if (!r.ok) {
+    let detail = ''
+    try { detail = (await r.json())?.error?.message ?? '' } catch { /* corps non JSON */ }
+    console.error('Gemini error', r.status, detail)
+    const hint = r.status === 400 && /api key/i.test(detail) ? ' — clé API invalide, vérifie GEMINI_API_KEY sur Netlify' : ''
+    return json({ error: `Erreur IA (${r.status})${hint}${detail ? ` : ${detail.slice(0, 160)}` : ''}` }, 502)
+  }
   const data = await r.json()
   const text = data?.candidates?.[0]?.content?.parts?.map(p => p.text).join('') ?? ''
   return json({ text: text.trim() || "Pas de réponse de l'IA." })
