@@ -60,3 +60,10 @@ src/
 ## Notes
 - Aucun son externe : tout est synthétisé (Web Audio API), rien ne joue avant la première interaction ; le bouton 🔊 est toujours visible et sa préférence est mémorisée.
 - Les questions sont à faire relire par l'enseignant·e avant diffusion (les définitions peuvent varier légèrement selon les cours, par ex. vente additionnelle/complémentaire, « règle des 4C » non incluse faute de définition unique).
+
+## IA (explications) et déploiement Netlify
+
+Le bouton « 🤖 Explique-moi avec l'IA » appelle la fonction `netlify/functions/ai.mjs`, qui interroge l'API Gemini. **La clé n'est jamais dans le code du site** : elle est lue côté serveur via la variable `GEMINI_API_KEY`.
+
+- **En local** : copier `.env.example` en `.env`, y mettre la clé, puis `npx netlify dev` (le `.env` est ignoré par git).
+- **Déploiement** : pousser le dépôt sur GitHub, créer un site sur Netlify en choisissant ce dépôt, avec *Base directory* `quiz-bac-pro-mcv` (le `netlify.toml` fournit build `npm run build`, dossier `dist` et la fonction). Puis *Site configuration → Environment variables* : ajouter `GEMINI_API_KEY`. Sans clé, le quiz fonctionne, seul le bouton IA affiche une erreur.

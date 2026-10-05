@@ -9,6 +9,7 @@ import { vibrate } from '../lib/haptics'
 import { THEME_BY_ID } from '../data/themes'
 import AnswerButton, { type AnswerState } from './AnswerButton'
 import ComboBadge from './ComboBadge'
+import AiExplain from './AiExplain'
 
 interface Props {
   config: GameConfig
@@ -245,6 +246,7 @@ export default function Game({ config, onFinish, onQuit }: Props) {
                   )}
                 </p>
                 <p className="mt-1 font-semibold leading-relaxed">{q.explication}</p>
+                <AiExplain q={q} chosen={selected} />
               </motion.div>
             )}
           </AnimatePresence>

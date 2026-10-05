@@ -6,6 +6,7 @@ import { levelInfo, LEVELS } from '../data/levels'
 import { BADGE_BY_ID } from '../data/badges'
 import { playBadge, playLevelUp } from '../lib/sounds'
 import { vibrate } from '../lib/haptics'
+import AiExplain from './AiExplain'
 
 interface Props {
   summary: GameSummary
@@ -171,6 +172,7 @@ export default function Result({ summary, onReplay, onHome }: Props) {
                 <summary className="cursor-pointer font-extrabold">❌ {a.q.question}</summary>
                 <p className="mt-2 text-sm font-bold text-emerald-500">✓ {a.q.reponses[a.q.bonneReponse]}</p>
                 <p className="mt-1 text-sm font-semibold leading-relaxed text-muted">{a.q.explication}</p>
+                <AiExplain q={a.q} chosen={a.chosen} />
               </details>
             ))}
           </div>
