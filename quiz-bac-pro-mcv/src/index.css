@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 245 246 252;
+  --card: 255 255 255;
+  --ink: 20 24 48;
+  --muted: 100 108 140;
+  --line: 224 228 244;
+}
+.dark {
+  --bg: 12 14 32;
+  --card: 24 28 56;
+  --ink: 240 243 255;
+  --muted: 150 158 196;
+  --line: 44 50 92;
+}
+
+html, body, #root { min-height: 100%; }
+body {
+  font-family: 'Nunito', system-ui, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
+  background-color: rgb(var(--bg));
+  color: rgb(var(--ink));
+  background-image:
+    radial-gradient(60rem 28rem at 10% -10%, rgb(139 92 246 / 0.22), transparent 60%),
+    radial-gradient(50rem 26rem at 100% 0%, rgb(236 72 153 / 0.16), transparent 60%);
+  background-attachment: fixed;
+}
+button { touch-action: manipulation; }
+button:focus-visible, input:focus-visible { outline: 3px solid rgb(167 139 250); outline-offset: 2px; }
+
+@layer components {
+  .card { @apply rounded-3xl border border-line bg-card shadow-lg shadow-black/5; }
+  .btn-big {
+    @apply w-full rounded-2xl px-6 py-4 text-lg font-black text-white shadow-lg
+      transition active:scale-[0.97] active:shadow-none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
