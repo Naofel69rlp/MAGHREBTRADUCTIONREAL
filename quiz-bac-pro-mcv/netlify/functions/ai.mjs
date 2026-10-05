@@ -1,6 +1,7 @@
 // Fonction Netlify : explique / corrige une réponse de quiz avec l'API Gemini.
 // La clé reste côté serveur (variable d'environnement GEMINI_API_KEY).
-const MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash'
+// Modèles essayés dans l'ordre (repli si l'un est surchargé ou retiré)
+const MODELS = [process.env.GEMINI_MODEL, 'gemini-flash-latest', 'gemini-3.1-flash-lite'].filter(Boolean)
 const json = (body, status = 200) =>
   new Response(JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json' } })
 const clip = (s, n) => String(s ?? '').slice(0, n)
@@ -24,11 +25,15 @@ ${chosen ? `L'élève a répondu : ${chosen}` : ''}
 Explication officielle : ${clip(b.explication, 500)}
 ${b.demande ? `Demande de l'élève : ${clip(b.demande, 300)}` : "Explique pourquoi la bonne réponse est correcte, et pourquoi la réponse de l'élève est fausse s'il s'est trompé. Donne un petit exemple concret ou une astuce pour retenir."}`
 
-  const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'x-goog-api-key': key },
-    body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { temperature: 0.4, maxOutputTokens: 1200, thinkingConfig: { thinkingBudget: 0 } } }),
-  })
+  let r
+  for (const model of MODELS) {
+    r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'x-goog-api-key': key },
+      body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { temperature: 0.4, maxOutputTokens: 1200 } }),
+    })
+    if (r.ok) break
+  }
   if (!r.ok) return json({ error: `Erreur IA (${r.status})` }, 502)
   const data = await r.json()
   const text = data?.candidates?.[0]?.content?.parts?.map(p => p.text).join('') ?? ''
