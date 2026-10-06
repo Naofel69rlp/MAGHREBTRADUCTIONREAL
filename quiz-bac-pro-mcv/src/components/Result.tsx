@@ -4,7 +4,7 @@ import confetti from 'canvas-confetti'
 import type { GameSummary } from '../types'
 import { levelInfo, LEVELS } from '../data/levels'
 import { BADGE_BY_ID } from '../data/badges'
-import { playBadge, playLevelUp } from '../lib/sounds'
+import { playBadge, playFinish, playLevelUp, playRecord } from '../lib/sounds'
 import { vibrate } from '../lib/haptics'
 import AiExplain from './AiExplain'
 
@@ -43,6 +43,8 @@ export default function Result({ summary, onReplay, onHome }: Props) {
   useEffect(() => {
     const timers: number[] = []
     const t = (fn: () => void, ms: number) => timers.push(window.setTimeout(fn, ms))
+    t(() => playFinish(ratio >= 0.5), 100)
+    if (record.isNew && !levelUp) t(playRecord, 900)
     if (levelUp) {
       t(() => { playLevelUp(); burst(true); vibrate([80, 50, 80, 50, 200]) }, 900)
       if (newBadges.length) t(playBadge, 2300)

@@ -4,7 +4,7 @@ import type { AnswerLog, GameConfig, GameResult } from '../types'
 import { useGame, useProfile } from '../store/GameContext'
 import { buildQuestions } from '../lib/game'
 import { comboLevel, computeXp } from '../lib/xp'
-import { playCombo, playCorrect, playTick, playWrong } from '../lib/sounds'
+import { playCombo, playCorrect, playNext, playStart, playTick, playWrong } from '../lib/sounds'
 import { vibrate } from '../lib/haptics'
 import { THEME_BY_ID } from '../data/themes'
 import AnswerButton, { type AnswerState } from './AnswerButton'
@@ -74,6 +74,7 @@ export default function Game({ config, onFinish, onQuit }: Props) {
       finish()
       return
     }
+    playNext()
     indexRef.current += 1
     setIndex(indexRef.current)
     setSelected(null)
@@ -86,6 +87,9 @@ export default function Game({ config, onFinish, onQuit }: Props) {
   finishRef.current = finish
   const nextRef = useRef(next)
   nextRef.current = next
+
+  // Son de début de partie
+  useEffect(() => { playStart() }, [])
 
   // Nettoyage des timers
   useEffect(() => () => { timeoutsRef.current.forEach(clearTimeout) }, [])
