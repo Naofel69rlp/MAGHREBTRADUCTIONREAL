@@ -10,6 +10,7 @@
     "check:questions": "node scripts/check-questions.mjs"
   },
   "dependencies": {
+    "@netlify/blobs": "^11.1.3",
     "canvas-confetti": "^1.9.3",
     "framer-motion": "^11.11.0",
     "react": "^18.3.1",

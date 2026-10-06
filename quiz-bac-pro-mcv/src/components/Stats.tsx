@@ -5,6 +5,7 @@ import { BADGES } from '../data/badges'
 import { levelInfo } from '../data/levels'
 import { masteryOf, effectiveStreak } from '../lib/profile'
 import MasteryBar from './MasteryBar'
+import AccountForm from './AccountForm'
 import type { ModeId } from '../types'
 
 const MODES: { id: ModeId; nom: string; unit: string }[] = [
@@ -27,8 +28,9 @@ function Tile({ label, value }: { label: string; value: string | number }) {
 
 export default function Stats({ onBack }: { onBack: () => void }) {
   const profile = useProfile()
-  const { updateSettings, resetAll } = useGame()
+  const { updateSettings, resetAll, session, syncStatus, logout } = useGame()
   const [confirmReset, setConfirmReset] = useState(false)
+  const [accTab, setAccTab] = useState<'register' | 'login'>('register')
   const info = levelInfo(profile.xp)
   const rate = profile.answered ? Math.round((profile.correct / profile.answered) * 100) : 0
   const unlocked = BADGES.filter(b => profile.badges[b.id]).length
@@ -81,6 +83,38 @@ export default function Stats({ onBack }: { onBack: () => void }) {
             )
           })}
         </div>
+      </section>
+
+      <section className="card mt-5 p-4">
+        <h2 className="mb-3 text-lg font-black">☁️ Mon compte</h2>
+        {session ? (
+          <>
+            <p className="font-bold">Connecté en tant que <span className="text-violet-500">{session.pseudo}</span></p>
+            <p className="mt-1 text-sm font-semibold text-muted">
+              {syncStatus === 'saving' && 'Sauvegarde en cours…'}
+              {syncStatus === 'ok' && '✅ Progression sauvegardée en ligne'}
+              {syncStatus === 'error' && '⚠️ Sauvegarde impossible pour le moment (elle reprendra automatiquement)'}
+              {syncStatus === 'idle' && 'Ta progression est sauvegardée automatiquement.'}
+            </p>
+            <button onClick={logout} className="mt-3 w-full rounded-xl border-2 border-line py-3 font-extrabold text-muted">
+              Se déconnecter
+            </button>
+          </>
+        ) : (
+          <>
+            <p className="mb-3 text-sm font-semibold text-muted">
+              Mode invité : ta progression n'est que sur cet appareil. Crée un compte pour la sauvegarder en ligne.
+            </p>
+            <div className="mb-3 grid grid-cols-2 gap-1 rounded-2xl bg-bg p-1">
+              {(['register', 'login'] as const).map(t => (
+                <button key={t} onClick={() => setAccTab(t)} className={`rounded-xl py-2.5 text-sm font-extrabold ${accTab === t ? 'bg-violet-500 text-white' : 'text-muted'}`}>
+                  {t === 'register' ? 'Créer un compte' : 'Connexion'}
+                </button>
+              ))}
+            </div>
+            <AccountForm key={accTab} mode={accTab} initialPseudo={accTab === 'register' ? profile.pseudo : ''} warnReplace={profile.answered > 0} />
+          </>
+        )}
       </section>
 
       <section className="card mt-5 p-4">

@@ -9,3 +9,8 @@
   from = "/api/ai"
   to = "/.netlify/functions/ai"
   status = 200
+
+[[redirects]]
+  from = "/api/account"
+  to = "/.netlify/functions/account"
+  status = 200

@@ -33,6 +33,9 @@ function Screens() {
 
   useEffect(() => { window.scrollTo(0, 0) }, [view.name])
 
+  // Déconnexion / réinitialisation : on revient à l'accueil à la prochaine connexion
+  useEffect(() => { if (!profile) setView({ name: 'home' }) }, [profile])
+
   if (!profile) return <Onboarding />
 
   const play = (config: GameConfig, run = 0) => setView({ name: 'game', config, run })
