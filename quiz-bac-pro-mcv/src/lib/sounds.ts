@@ -18,36 +18,48 @@ function readMuted(): boolean {
   }
 }
 
+/** WAV silencieux (0,1 s) : le jouer via <audio> fait passer iOS en « lecture » et ignore l'interrupteur silencieux. */
+const SILENT_WAV =
+  'data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQAAAAA='
+let silentEl: HTMLAudioElement | null = null
+
 function init() {
   if (ctx) return
   const AC = window.AudioContext ?? (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext
   if (!AC) return
   ctx = new AC()
   master = ctx.createGain()
-  master.gain.value = 0.7
+  master.gain.value = 0.8
   master.connect(ctx.destination)
 }
 
-/** À appeler depuis un geste utilisateur : crée/reprend le contexte audio. */
+/** À appeler depuis un geste utilisateur : crée/reprend le contexte audio (et contourne le mode silencieux d'iOS). */
 export function unlockAudio() {
   try {
+    const nav = navigator as Navigator & { audioSession?: { type: string } }
+    if (nav.audioSession) nav.audioSession.type = 'playback'
+    if (!silentEl) {
+      silentEl = new Audio(SILENT_WAV)
+      silentEl.loop = true
+      silentEl.setAttribute('playsinline', '')
+    }
+    void silentEl.play().catch(() => { /* refusé hors geste : sans gravité */ })
     init()
-    if (ctx && ctx.state === 'suspended') void ctx.resume()
+    if (ctx && ctx.state !== 'running') void ctx.resume()
   } catch {
     /* audio indisponible */
   }
 }
 
 if (typeof window !== 'undefined') {
-  const once = () => {
+  // Sur iOS, seuls certains événements (touchend, click) comptent comme « geste » : on les écoute tous
+  // et on ne retire les écouteurs qu'une fois le contexte réellement démarré.
+  const events = ['pointerdown', 'pointerup', 'touchend', 'click', 'keydown'] as const
+  const tryUnlock = () => {
     unlockAudio()
-    window.removeEventListener('pointerdown', once)
-    window.removeEventListener('keydown', once)
-    window.removeEventListener('touchstart', once)
+    if (ctx && ctx.state === 'running') events.forEach(e => window.removeEventListener(e, tryUnlock))
   }
-  window.addEventListener('pointerdown', once, { passive: true })
-  window.addEventListener('keydown', once)
-  window.addEventListener('touchstart', once, { passive: true })
+  events.forEach(e => window.addEventListener(e, tryUnlock, { passive: true }))
 }
 
 export function isMuted() {
@@ -106,12 +118,16 @@ function tone(freq: number, start: number, dur: number, o: ToneOpts = {}) {
 }
 
 function play(fn: () => void) {
-  if (muted || !ctx || ctx.state !== 'running') return
-  try {
-    fn()
-  } catch {
-    /* ignore */
+  if (muted || !ctx) return
+  const run = () => {
+    try {
+      fn()
+    } catch {
+      /* ignore */
+    }
   }
+  if (ctx.state === 'running') run()
+  else void ctx.resume().then(() => { if (ctx && ctx.state === 'running') run() }).catch(() => { /* ignore */ })
 }
 
 const semitone = (n: number) => Math.pow(2, n / 12)
@@ -166,4 +182,32 @@ export function playBadge() {
 /** Clic sur bouton. */
 export function playClick() {
   play(() => tone(520, 0, 0.05, { type: 'sine', to: 700, gain: 0.1, attack: 0.003 }))
+}
+
+/** Début de partie : petit « whoosh » montant. */
+export function playStart() {
+  play(() => {
+    tone(330, 0, 0.18, { type: 'triangle', to: 660, gain: 0.16 })
+    tone(660, 0.14, 0.2, { type: 'sine', to: 990, gain: 0.14 })
+  })
+}
+
+/** Fin de partie : jingle de résultat (plus joyeux si le score est bon). */
+export function playFinish(good: boolean) {
+  play(() => {
+    const notes = good ? [523.25, 659.25, 783.99, 1046.5] : [440, 392, 349.23]
+    notes.forEach((f, i) => tone(f, i * 0.12, 0.22, { type: 'triangle', gain: 0.2 }))
+  })
+}
+
+/** Nouveau record : arpège brillant. */
+export function playRecord() {
+  play(() => {
+    ;[784, 988, 1175, 1568, 1976].forEach((f, i) => tone(f, i * 0.08, 0.3, { type: 'sine', gain: 0.17 }))
+  })
+}
+
+/** Passage à la question suivante : léger « tick ». */
+export function playNext() {
+  play(() => tone(440, 0, 0.06, { type: 'sine', to: 560, gain: 0.08, attack: 0.004 }))
 }
