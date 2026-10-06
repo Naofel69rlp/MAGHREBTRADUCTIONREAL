@@ -44,7 +44,7 @@ export default function Home({ onPlay, onThemes, onStats }: Props) {
   return (
     <div className="mx-auto max-w-2xl px-4 pb-12 pt-5">
       {/* Profil */}
-      <motion.section initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="card p-4 pr-16">
+      <motion.section initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="card p-4 pr-28">
         <div className="flex items-center gap-3">
           <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-500 to-pink-500 text-4xl shadow-md">
             {info.current.emoji}

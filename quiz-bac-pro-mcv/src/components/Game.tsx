@@ -4,7 +4,7 @@ import type { AnswerLog, GameConfig, GameResult } from '../types'
 import { useGame, useProfile } from '../store/GameContext'
 import { buildQuestions } from '../lib/game'
 import { comboLevel, computeXp } from '../lib/xp'
-import { playCombo, playCorrect, playNext, playStart, playTick, playWrong } from '../lib/sounds'
+import { playCombo, playCorrect, playNext, playStart, playTick, playWrong, setMusicWanted } from '../lib/sounds'
 import { vibrate } from '../lib/haptics'
 import { THEME_BY_ID } from '../data/themes'
 import AnswerButton, { type AnswerState } from './AnswerButton'
@@ -89,7 +89,11 @@ export default function Game({ config, onFinish, onQuit }: Props) {
   nextRef.current = next
 
   // Son de début de partie
-  useEffect(() => { playStart() }, [])
+  useEffect(() => {
+    playStart()
+    setMusicWanted(true)
+    return () => setMusicWanted(false)
+  }, [])
 
   // Nettoyage des timers
   useEffect(() => () => { timeoutsRef.current.forEach(clearTimeout) }, [])
@@ -179,14 +183,14 @@ export default function Game({ config, onFinish, onQuit }: Props) {
   return (
     <div className="mx-auto flex min-h-screen max-w-2xl flex-col px-4 pb-28 pt-4">
       {/* Barre du haut */}
-      <header className="flex items-center gap-3 pr-14">
+      <header className="flex items-center gap-3 pr-28">
         <button onClick={finish} aria-label="Terminer la partie" className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-line bg-card text-xl font-black text-muted">
           ✕
         </button>
         <div className="flex-1">
-          <div className="mb-1 flex justify-between text-xs font-extrabold text-muted">
-            <span>{MODE_LABEL[config.mode]}</span>
-            <span>{isChrono ? `${Math.ceil(remaining / 1000)} s` : isSurvie ? `Question ${index + 1}` : `${index + 1} / ${questions.length}`}</span>
+          <div className="mb-1 flex justify-between gap-2 text-xs font-extrabold text-muted">
+            <span className="truncate">{MODE_LABEL[config.mode]}</span>
+            <span className="shrink-0">{isChrono ? `${Math.ceil(remaining / 1000)} s` : isSurvie ? `Question ${index + 1}` : `${index + 1} / ${questions.length}`}</span>
           </div>
           <div className="h-3 overflow-hidden rounded-full bg-line">
             <motion.div

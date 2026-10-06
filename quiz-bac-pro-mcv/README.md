@@ -67,3 +67,13 @@ Le bouton « 🤖 Explique-moi avec l'IA » appelle la fonction `netlify/functio
 
 - **En local** : copier `.env.example` en `.env`, y mettre la clé, puis `npx netlify dev` (le `.env` est ignoré par git).
 - **Déploiement** : pousser le dépôt sur GitHub, créer un site sur Netlify en choisissant ce dépôt, avec *Base directory* `quiz-bac-pro-mcv` (le `netlify.toml` fournit build `npm run build`, dossier `dist` et la fonction). Puis *Site configuration → Environment variables* : ajouter `GEMINI_API_KEY`. Sans clé, le quiz fonctionne, seul le bouton IA affiche une erreur.
+
+## Comptes élèves (sauvegarde en ligne)
+
+- Création de compte / connexion par **pseudo + mot de passe** (onglets sur l'écran d'accueil), ou mode **Invité** (progression sur l'appareil uniquement). Un invité peut créer un compte plus tard depuis « Mes stats » : sa progression est alors envoyée au compte.
+- La progression (XP, niveau, badges, série, stats) est sauvegardée automatiquement dans **Netlify Blobs** via la fonction `netlify/functions/account.mjs` : aucun service externe ni configuration à faire.
+- Sécurité : mots de passe hachés (scrypt + sel), sessions par jeton signé (30 jours), verrouillage d'1 minute après 5 mauvais essais. Pas d'e-mail : un mot de passe oublié ne peut pas être récupéré (il faut créer un nouveau compte). Optionnel : variable `AUTH_SECRET` pour fixer le secret de signature.
+- Le service de comptes ne fonctionne qu'une fois déployé sur Netlify (ou avec `npx netlify dev`) ; avec `npm run dev` seul, le mode Invité reste disponible.
+
+## Audio
+Sons et **musique de fond** (boucle originale synthétisée, jouée pendant les parties) : deux boutons en haut à droite (🎵 musique, 🔊 son).
